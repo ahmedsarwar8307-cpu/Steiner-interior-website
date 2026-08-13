@@ -1,0 +1,208 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system — luxury interior & flooring studio.
+ * Palette: ivory / warm beige / sand / charcoal + muted gold accent.
+ * All colors in oklch. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-ivory: var(--ivory);
+  --color-sand: var(--sand);
+  --color-beige: var(--beige);
+  --color-charcoal: var(--charcoal);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-foreground: var(--whatsapp-foreground);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.25rem;
+
+  --background: oklch(0.985 0.006 85);
+  --foreground: oklch(0.245 0.008 60);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.245 0.008 60);
+  --popover: oklch(0.995 0.003 85);
+  --popover-foreground: oklch(0.245 0.008 60);
+
+  --primary: oklch(0.28 0.008 60);
+  --primary-foreground: oklch(0.985 0.006 85);
+
+  --secondary: oklch(0.945 0.014 84);
+  --secondary-foreground: oklch(0.28 0.008 60);
+
+  --muted: oklch(0.955 0.011 85);
+  --muted-foreground: oklch(0.53 0.012 65);
+
+  --accent: oklch(0.72 0.075 78);
+  --accent-foreground: oklch(0.22 0.008 60);
+
+  --destructive: oklch(0.577 0.19 27.3);
+  --destructive-foreground: oklch(0.985 0.006 85);
+
+  --border: oklch(0.9 0.012 85);
+  --input: oklch(0.9 0.012 85);
+  --ring: oklch(0.72 0.075 78);
+
+  --ivory: oklch(0.977 0.008 90);
+  --sand: oklch(0.925 0.021 82);
+  --beige: oklch(0.885 0.028 80);
+  --charcoal: oklch(0.245 0.008 60);
+  --gold: oklch(0.72 0.075 78);
+  --gold-foreground: oklch(0.2 0.008 60);
+  --whatsapp: oklch(0.66 0.16 152);
+  --whatsapp-foreground: oklch(0.99 0.005 150);
+
+  --shadow-soft: 0 1px 2px oklch(0.245 0.008 60 / 0.04), 0 12px 32px -18px oklch(0.245 0.008 60 / 0.22);
+  --shadow-lift: 0 2px 4px oklch(0.245 0.008 60 / 0.05), 0 28px 60px -28px oklch(0.245 0.008 60 / 0.32);
+  --gradient-veil: linear-gradient(
+    to top,
+    oklch(0.2 0.008 60 / 0.82) 0%,
+    oklch(0.2 0.008 60 / 0.42) 45%,
+    oklch(0.2 0.008 60 / 0.28) 100%
+  );
+  --gradient-card: linear-gradient(to top, oklch(0.2 0.008 60 / 0.78), transparent 62%);
+  --transition-silk: 700ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  --sidebar: oklch(0.977 0.008 90);
+  --sidebar-foreground: oklch(0.245 0.008 60);
+  --sidebar-primary: oklch(0.28 0.008 60);
+  --sidebar-primary-foreground: oklch(0.985 0.006 85);
+  --sidebar-accent: oklch(0.945 0.014 84);
+  --sidebar-accent-foreground: oklch(0.28 0.008 60);
+  --sidebar-border: oklch(0.9 0.012 85);
+  --sidebar-ring: oklch(0.72 0.075 78);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--gold-foreground);
+  }
+}
+
+@utility shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+@utility shadow-lift {
+  box-shadow: var(--shadow-lift);
+}
+
+@utility veil {
+  background-image: var(--gradient-veil);
+}
+
+@utility card-veil {
+  background-image: var(--gradient-card);
+}
+
+@utility glass-panel {
+  background-color: oklch(1 0 0 / 0.72);
+  backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid oklch(1 0 0 / 0.5);
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@utility hairline {
+  &::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 1px;
+    background: var(--gold);
+  }
+}
+
+@utility container-lux {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 84rem;
+  padding-inline: 1.25rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 2.5rem;
+  }
+}
