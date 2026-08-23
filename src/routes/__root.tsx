@@ -96,6 +96,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          name: siteConfig.name,
+          description: siteConfig.shortDescription,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: siteConfig.address,
+            addressLocality: "Rawalpindi",
+            addressRegion: "Punjab",
+            addressCountry: "PK",
+          },
+          telephone: siteConfig.phoneDisplay,
+          email: siteConfig.email,
+          openingHoursSpecification: siteConfig.hours.map((h) => ({
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: h.days,
+            description: h.time,
+          })),
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            reviewCount: "43",
+          },
+          sameAs: siteConfig.socials.map((s) => s.href),
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,

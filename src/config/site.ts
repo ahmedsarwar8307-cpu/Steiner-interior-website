@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "STEINER DESIGN Interiors",
+  name: "STEINER Design Interior",
   tagline: "The New Way of Life",
   shortDescription:
     "A premium interior products studio specialising in flooring, wall solutions, window treatments and complete interior transformations.",
@@ -11,15 +11,15 @@ export const siteConfig = {
   phoneHref: "tel:+923114978508",
   email: "steinerdesigninterior@gmail.com",
   address:
-    "Office #2 & #3, Basement, Aries Tower, Shamsabad, Murree Road, Rawalpindi",
+    "Office #2&3, Basement UBL Bank, Aries Tower, Shamsabad, Murree Road, Rawalpindi",
 
   hours: [
-    { days: "Monday – Saturday", time: "10:00 AM – 8:00 PM" },
-    { days: "Sunday", time: "By appointment" },
+    { days: "Monday – Sunday", time: "10:00 AM – 8:00 PM" },
+    { days: "Friday", time: "Only by appointment" },
   ],
 
   /** Replace with your Google Maps embed URL. */
-  mapEmbedUrl: "",
+  mapEmbedUrl: "https://www.google.com/maps?q=Steiner+Design+Interior,+Main+Murree+Rd,+Shamsabad,+Rawalpindi&output=embed",
 
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/steinerdesigninterior?igsh=MW9sa2Q2bm5ycmFydQ==" },
@@ -30,9 +30,9 @@ export const siteConfig = {
 
   /** Placeholder statistics — update with real figures. */
   stats: [
-    { value: 100, suffix: "+", label: "Projects Completed" },
-    { value: 100, suffix: "+", label: "Happy Clients" },
-    { value: 8, suffix: "+", label: "Years of Experience" },
-    { value: 15, suffix: "+", label: "Products Available" },
+    { value: 250, suffix: "+", label: "Projects Completed" },
+    { value: 250, suffix: "+", label: "Happy Clients" },
+    { value: 6, suffix: "+", label: "Years of Experience" },
+    { value: 25, suffix: "+", label: "Products Available" },
   ],
 } as const;

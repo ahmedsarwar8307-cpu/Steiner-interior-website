@@ -12,3 +12,4 @@ Allow: /
 
 User-agent: *
 Allow: /
+Sitemap: https://www.steinerdesigninterior.com/sitemap.xml

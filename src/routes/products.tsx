@@ -1,10 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { PageHero } from "@/components/PageHero";
 import { ProductFilter } from "@/components/ProductFilter";
 import { ProductCard } from "@/components/ProductCard";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 import { categories, products } from "@/data/products";
 import { waMessages } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
@@ -73,18 +74,26 @@ function ProductsPage() {
             onSubcategory={(slug) => navigate({ search: { category, sub: slug, q: query } })}
           />
 
-          <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-y border-border py-4">
+                   <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-y border-border py-4">
             <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
               {filtered.length} {filtered.length === 1 ? "product" : "products"}
               {activeCategory ? ` in ${activeCategory.name}` : ""}
             </p>
-            <WhatsAppButton
-              size="sm"
-              label={activeCategory ? `Enquire about ${activeCategory.name}` : "Enquire on WhatsApp"}
-              message={
-                activeCategory ? waMessages.category(activeCategory.name) : waMessages.general
-              }
-            />
+            <div className="flex flex-wrap items-center gap-4">
+              <Link
+                to="/calculator"
+                className="text-xs uppercase tracking-[0.16em] text-gold underline-offset-4 hover:underline"
+              >
+                 Try our area calculator
+              </Link>
+              <WhatsAppButton
+                size="sm"
+                label={activeCategory ? `Enquire about ${activeCategory.name}` : "Enquire on WhatsApp"}
+                message={
+                  activeCategory ? waMessages.category(activeCategory.name) : waMessages.general
+                }
+              />
+            </div>
           </div>
 
           <motion.div layout className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -100,6 +109,8 @@ function ProductsPage() {
               No products match this filter. Try another category or search term.
             </p>
           ) : null}
+
+        
         </div>
       </section>
     </>

@@ -7,7 +7,8 @@ import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { cn } from "@/lib/utils";
 import { projectCategories, projects } from "@/data/projects";
 import { siteConfig } from "@/config/site";
-
+import beforeImg from "@/assets/living-before.jpeg";
+import afterImg from "@/assets/living-after.jpeg";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
@@ -74,7 +75,7 @@ function ProjectsPage() {
             align="center"
           />
           <div className="mx-auto mt-12 max-w-4xl">
-            <BeforeAfterSlider />
+            <BeforeAfterSlider before={beforeImg} after={afterImg} beforeLabel="Before" afterLabel="After" />
           </div>
         </div>
       </section>

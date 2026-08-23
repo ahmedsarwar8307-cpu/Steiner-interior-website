@@ -9,7 +9,7 @@ import { getProject } from "@/data/projects";
 import { waMessages } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 
-export const Route = createFileRoute("/projects/$slug")({
+export const Route = createFileRoute("/projects_/$slug")({
   loader: ({ params }) => {
     const project = getProject(params.slug);
     if (!project) throw notFound();

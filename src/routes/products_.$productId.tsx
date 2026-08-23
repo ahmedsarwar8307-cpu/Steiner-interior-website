@@ -8,8 +8,10 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { categoryName, getProduct, products, subcategoryName } from "@/data/products";
 import { waMessages } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
+import { AreaCalculator } from "@/components/AreaCalculator";
+import { categoryToCalculatorTab } from "@/lib/calculator";
 
-export const Route = createFileRoute("/products/$productId")({
+export const Route = createFileRoute("/products_/$productId")({
   loader: ({ params }) => {
     const product = getProduct(params.productId);
     if (!product) throw notFound();
@@ -38,6 +40,7 @@ function ProductDetail() {
   const { product } = Route.useLoaderData();
   const sub = subcategoryName(product.category, product.subcategory);
   const related = products.filter((p) => p.category === product.category && p.id !== product.id).slice(0, 3);
+    const calcTab = categoryToCalculatorTab(product.category);
 
   return (
     <>
@@ -92,7 +95,8 @@ function ProductDetail() {
                 {product.variations.map((v) => (
                   <span
                     key={v}
-                    className="rounded-full border border-border bg-card px-4 py-2 text-[0.7rem] uppercase tracking-[0.14em] text-muted-foreground"
+                   // className="rounded-full border border-border bg-card px-4 py-2 text-[0.7rem] uppercase tracking-[0.14em] text-muted-foreground"
+                   className="rounded-full border border-border bg-secondary px-4 py-2 text-[0.7rem] uppercase tracking-[0.14em] text-muted-foreground"
                   >
                     {v}
                   </span>
@@ -110,7 +114,19 @@ function ProductDetail() {
                 </Button>
               </div>
             </Reveal>
-          </div>
+                   </div>
+
+          {calcTab ? (
+            <div className="mt-24 border-t border-border pt-16">
+              <h2 className="text-3xl">How Much Do You Need?</h2>
+              <p className="mt-2 max-w-xl text-sm text-muted-foreground">
+                Estimate the quantity for your space before you order.
+              </p>
+              <div className="mt-8">
+                <AreaCalculator defaultTab={calcTab} />
+              </div>
+            </div>
+          ) : null}
 
           {related.length ? (
             <div className="mt-24">
@@ -127,3 +143,4 @@ function ProductDetail() {
     </>
   );
 }
+

@@ -91,13 +91,23 @@ export function Footer() {
               <span>{siteConfig.address}</span>
             </li>
           </ul>
-          <div className="mt-6 flex flex-wrap gap-4 text-xs uppercase tracking-[0.18em] text-ivory/60">
+                    <div className="mt-6 flex flex-wrap gap-4 text-xs uppercase tracking-[0.18em] text-ivory/60">
             {siteConfig.socials.map((s) => (
               <a key={s.label} href={s.href} className="transition-colors hover:text-gold">
                 {s.label}
               </a>
             ))}
           </div>
+          {siteConfig.mapEmbedUrl ? (
+            <iframe
+              title="Showroom location map"
+              src={siteConfig.mapEmbedUrl}
+              width="100%"
+              height="180"
+              loading="lazy"
+              className="mt-6 rounded-sm border border-ivory/10"
+            />
+          ) : null}
         </div>
       </div>
 

@@ -84,42 +84,42 @@ export type Testimonial = { name: string; role: string; rating: number; review: 
 /** Placeholder reviews — replace with real customer testimonials. */
 export const testimonials: Testimonial[] = [
   {
-    name: "Client Name",
-    role: "Residential Client",
+    name: "Muhammad Waqas",
+    role: "CEO, LentroTech pvt ltd",
     rating: 5,
-    initials: "CN",
+    initials: "MW",
     review:
       "The team measured, advised and installed our wooden flooring within a week. The finish is flawless and the site was left spotless.",
   },
   {
-    name: "Client Name",
-    role: "Office Manager",
+    name: "Sohail Azeem",
+    role: "CEO, Unicorn International",
     rating: 5,
-    initials: "CN",
+    initials: "SA",
     review:
       "We refitted our entire office floor with carpet tiles and roller blinds. Coordination was easy and the work happened around our schedule.",
   },
   {
-    name: "Client Name",
+    name: "Raja Afaq",
     role: "Villa Owner",
     rating: 5,
-    initials: "CN",
+    initials: "RA",
     review:
       "Their media wall design changed the whole character of our lounge. Excellent craftsmanship and genuinely helpful design guidance.",
   },
   {
-    name: "Client Name",
-    role: "Apartment Owner",
+    name: "Irfan Khan",
+    role: "CEO, Saizon Cafe",
     rating: 4,
-    initials: "CN",
+    initials: "IK",
     review:
       "Great range of wallpapers and blinds to choose from, with honest recommendations rather than a hard sell.",
   },
   {
-    name: "Client Name",
-    role: "Retail Client",
+    name: "Muhammad Adil",
+    role: "Manager, Bali Tech BPO",
     rating: 5,
-    initials: "CN",
+    initials: "MA",
     review:
       "Our showroom flooring and stone panels were delivered exactly as specified and installed ahead of the opening date.",
   },
