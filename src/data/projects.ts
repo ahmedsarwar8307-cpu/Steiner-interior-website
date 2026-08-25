@@ -16,7 +16,7 @@ import corporateofficeImg from "@/assets/corporate-office-fitout.jpeg";
 import kitchenDiningImg from "@/assets/kitchen-dining-renovation.jpeg";
 import mediawallloungeImg from "@/assets/media-wall-lounge.jpeg";
 import boutiqueShowroomImg from "@/assets/showroom.jpeg";
-import loungechairImg from"@/assets/lounge-chair.jpeg";
+import loungechairImg from"@/assets/media-wall-lounge-chairs.jpeg";
 import puStoneImg from "@/assets/pu-stone-panels.jpeg";
 import turkishwoodenflooringImg from "@/assets/turkish-wooden-flooring.jpeg";
 import wallmouldingsImg from "@/assets/wall-mouldings.jpeg";
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     location: "Gulberg Green, Islamabad",
     type: "Commercial",
     categories: ["Commercial", "Wall Design", "Flooring"],
-    year: "Completed 2025",
+    year: "Completed 2026",
     description:
       "Retail showroom interior pairing wide-plank wooden flooring with PU stone wall panels and accent lighting to frame the product display.",
     cover: boutiqueShowroomImg,
