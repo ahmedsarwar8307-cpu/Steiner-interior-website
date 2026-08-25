@@ -17,7 +17,7 @@ import kitchenDiningImg from "@/assets/kitchen-dining-renovation.jpeg";
 import mediawallloungeImg from "@/assets/media-wall-lounge.jpeg";
 import boutiqueShowroomImg from "@/assets/showroom.jpeg";
 import loungechairImg from"@/assets/media-wall-lounge-chairs.jpeg";
-import puStoneImg from "@/assets/pu-stone-panels.jpeg";
+import puStoneImg from "@/assets/pu-stone-panel.jpeg";
 import turkishwoodenflooringImg from "@/assets/turkish-wooden-flooring.jpeg";
 import wallmouldingsImg from "@/assets/wall-mouldings.jpeg";
 import KDrenovationImg from "@/assets/K-D-renovation.jpeg";
