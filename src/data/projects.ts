@@ -16,6 +16,16 @@ import corporateofficeImg from "@/assets/corporate-office-fitout.jpeg";
 import kitchenDiningImg from "@/assets/kitchen-dining-renovation.jpeg";
 import mediawallloungeImg from "@/assets/media-wall-lounge.jpeg";
 import boutiqueShowroomImg from "@/assets/showroom.jpeg";
+import loungechairImg from"@/assets/lounge-chair.jpeg";
+import puStoneImg from "@/assets/pu-stone-panels.jpeg";
+import turkishwoodenflooringImg from "@/assets/turkish-wooden-flooring.jpeg";
+import wallmouldingsImg from "@/assets/wall-mouldings.jpeg";
+import KDrenovationImg from "@/assets/K-D-renovation.jpeg";
+import Curtain from "@/assets/curtain.jpeg";
+import CT from "@/assets/cp-project.jpeg";
+import CO from "@/assets/co-project.jpeg";
+import villa from "@/assets/living-after.jpeg";
+import villa2 from "@/assets/villa-project.jpeg";
 export type Project = {
   slug: string;
   title: string;
@@ -49,39 +59,39 @@ export const projects: Project[] = [
     title: "Villa Living Transformation",
     location: "DHA II , Islamabad",
     type: "Residential",
-    categories: ["Residential", "Living Room", "Flooring"],
+    categories: ["Residential", "Living Room", "Wall Decor"],
     year: "Completed 2026",
     description:
       "A complete living-area transformation featuring luxury furniture, premium rugs, and custom interior work, designed to create a warm, elegant, and personalized space.",
     cover: villaLivingTransformation,
-    gallery: [p1, woodenImg, curtainsImg,villaLivingTransformation],
-    materials: ["German Wooden Flooring", "Curtains", "Wall Mouldings"],
+    gallery: [villa, villa2,villaLivingTransformation],
+    materials: ["Luxury Furniture", "Rugs", "Wall Panels"],
   },
   {
     slug: "corporate-office-fitout",
     title: "Corporate Office Fit-out",
     location: "Gulberg Green, Islamabad",
     type: "Commercial",
-    categories: ["Commercial", "Office", "Flooring"],
+    categories: ["Commercial", "Office", "Carpet Tiles"],
     year: "Completed 2025",
     description:
       "An open-plan workspace fit-out combining acoustic carpet tiles, timber wall cladding and uniform roller blinds for glare control across the façade.",
     cover: corporateofficeImg,
-    gallery: [p2, blindsImg,corporateofficeImg],
-    materials: ["Carpet Tiles", "Roller Blinds", "WPC Panels"],
+    gallery: [CO, CT,corporateofficeImg],
+    materials: ["Carpet Tiles", "Wooden Flooring", "Sports Flooring"],
   },
   {
     slug: "master-bedroom-suite",
     title: "Master Bedroom Suite",
     location: "F-10, Islamabad",
     type: "Residential",
-    categories: ["Residential", "Bedroom", "Wall Design"],
+    categories: ["Residential", "Bedroom", "Wall Decor"],
     year: "Completed 2026",
     description:
       "A sophisticated master bedroom featuring elegant PU stone wall panels and premium Curtains, creating a refined balance of texture, privacy, and comfort.",
     cover: masterbedroomImg,
-    gallery: [masterbedroomImg, carpetImg, curtainsImg],
-    materials: ["Korean Wallpapers", "Woolen Carpet", "Curtains"],
+    gallery: [masterbedroomImg,Curtain],
+    materials: ["PU Stone Panel ","WPC Panels", "Curtain"],
   },
   {
     slug: "kitchen-dining-renovation",
@@ -93,7 +103,7 @@ export const projects: Project[] = [
     description:
       "Waterproof SPC flooring laid throughout an open kitchen and dining zone, paired with warm timber joinery and a restrained lighting scheme.",
     cover: kitchenDiningImg,
-    gallery: [kitchenDiningImg, woodenImg],
+    gallery: [kitchenDiningImg,KDrenovationImg,],
     materials: ["SPC Flooring", "Wall Mouldings"],
   },
   {
@@ -106,8 +116,8 @@ export const projects: Project[] = [
     description:
       "A bespoke media wall in fluted timber with concealed cove lighting, integrated cable management and a dark, cinematic material palette.",
     cover: mediawallloungeImg,
-    gallery: [mediawallloungeImg, mediaWallImg, panelsImg],
-    materials: ["Media Walls", "WPC Panels", "Woolen Carpet"],
+    gallery: [mediawallloungeImg, loungechairImg, panelsImg],
+    materials: ["Media Walls", "WPC Panels", "Lounge Chairs"],
   },
   {
     slug: "boutique-showroom",
@@ -119,7 +129,7 @@ export const projects: Project[] = [
     description:
       "Retail showroom interior pairing wide-plank wooden flooring with PU stone wall panels and accent lighting to frame the product display.",
     cover: boutiqueShowroomImg,
-    gallery: [boutiqueShowroomImg, panelsImg, woodenImg],
+    gallery: [boutiqueShowroomImg, puStoneImg, turkishwoodenflooringImg],
     materials: ["Turkish Wooden Flooring", "PU Stone Panels"],
   },
 ];
