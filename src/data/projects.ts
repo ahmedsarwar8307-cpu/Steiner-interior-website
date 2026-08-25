@@ -23,7 +23,7 @@ import wallmouldingsImg from "@/assets/wall-mouldings.jpeg";
 import KDrenovationImg from "@/assets/K-D-renovation.jpeg";
 import Curtain from "@/assets/curtain.jpeg";
 import CT from "@/assets/cp-project.jpeg";
-import CO from "@/assets/co-project.jpeg";
+import CO from "@/assets/CO-project.jpeg";
 import villa from "@/assets/living-after.jpeg";
 import villa2 from "@/assets/villa-project.jpeg";
 export type Project = {
