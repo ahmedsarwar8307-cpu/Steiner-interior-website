@@ -19,7 +19,7 @@ export const projectVideos: ProjectVideo[] = [
     title: "Interior Finishing Walkthrough",
     description:
       "On-site walkthrough of interior finishes — wall treatment, flooring and joinery brought together.",
-    src: "/videos/project-video-2.mp4.mp4",
+    src: "/videos/video-project.mp4",
   },
   {
     id: "video-3",
