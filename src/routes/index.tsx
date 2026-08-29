@@ -71,15 +71,15 @@ function Home() {
           >
             Transforming Spaces Into Timeless Designs
           </motion.h1>
-         <motion.p
+      <motion.p
   initial={{ opacity: 0, y: 22 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.9, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
   className="mt-7 max-w-xl text-[1.02rem] leading-relaxed text-ivory/80"
 >
   We help homes and businesses across Pakistan — with a base in Rawalpindi and Islamabad —
-  choose the right flooring, panels, and finishes, then install it ourselves, so you're never
-  left managing three different contractors.
+  choose the right flooring, wall panels, wallpaper, blinds and curtains for their space,
+  then install it all ourselves, so you're never left managing three different contractors.
 </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 22 }}
