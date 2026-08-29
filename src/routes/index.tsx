@@ -23,21 +23,21 @@ import { getFeaturedProducts } from "@/data/products";
 //import { AreaCalculator } from "@/components/AreaCalculator";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: `${siteConfig.name} — Premium Flooring & Interior Solutions` },
-      {
-        name: "description",
-        content:
-          "Premium flooring, wall panels, wallpapers, blinds, curtains and media walls — designed, supplied and installed for homes and businesses.",
-      },
-      { property: "og:title", content: `${siteConfig.name} — Premium Flooring & Interior Solutions` },
-      {
-        property: "og:description",
-        content: "Transforming spaces into timeless designs with premium interior products.",
-      },
-    ],
-  }),
+ head: () => ({
+  meta: [
+    { title: `${siteConfig.name} | Flooring & Interior Solutions in Pakistan` },
+    {
+      name: "description",
+      content:
+        "Trusted interior products studio in Rawalpindi & Islamabad, serving clients across Pakistan. Flooring, wall panels, wallpaper, blinds & curtains — supplied and installed with 5.0★ rated service.",
+    },
+    { property: "og:title", content: `${siteConfig.name} | Flooring & Interior Solutions in Pakistan` },
+    {
+      property: "og:description",
+      content: "Trusted interior products studio in Rawalpindi & Islamabad, serving clients across Pakistan.",
+    },
+  ],
+}),
   component: Home,
 });
 
@@ -71,15 +71,16 @@ function Home() {
           >
             Transforming Spaces Into Timeless Designs
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 22 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-7 max-w-xl text-[1.02rem] leading-relaxed text-ivory/80"
-          >
-            Premium flooring, wall solutions, window treatments and interior products designed to
-            transform your space.
-          </motion.p>
+         <motion.p
+  initial={{ opacity: 0, y: 22 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.9, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
+  className="mt-7 max-w-xl text-[1.02rem] leading-relaxed text-ivory/80"
+>
+  We help homes and businesses across Pakistan — with a base in Rawalpindi and Islamabad —
+  choose the right flooring, panels, and finishes, then install it ourselves, so you're never
+  left managing three different contractors.
+</motion.p>
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}

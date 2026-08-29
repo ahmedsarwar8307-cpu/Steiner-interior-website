@@ -80,8 +80,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: `${siteConfig.name} — Interior Design & Flooring` },
-      { name: "description", content: siteConfig.shortDescription },
+     { title: `${siteConfig.name} | Flooring & Interior Solutions in Pakistan` },
+{ name: "description", content: "Trusted interior products studio in Rawalpindi & Islamabad, serving clients across Pakistan. Flooring, wall panels, wallpaper, blinds & curtains — supplied and installed with 5.0★ rated service." },
       { name: "author", content: siteConfig.name },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -95,6 +95,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@200;300;400;500&display=swap",
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+{ rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+{ rel: "icon", href: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+{ rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" },
+{ rel: "manifest", href: "/site.webmanifest" },
     ],
     scripts: [
       {
