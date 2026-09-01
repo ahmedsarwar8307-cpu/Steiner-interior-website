@@ -84,6 +84,16 @@ export const categories: Category[] = [
     subcategories: [],
   },
   {
+    slug: "carpet-tiles",
+    name: "Carpet Tiles",
+    blurb: "Modular carpet tiles for commercial and residential spaces — easy to install, replace and maintain.",
+    image: carpetTilesImg,
+    subcategories: [
+      { slug: "PP", name: "PP Carpet Tiles" },
+      { slug: "Nylon", name: "Nylon Carpet Tiles" },
+    ],
+  },
+  {
     slug: "wall-panels",
     name: "Wall Panels",
     blurb: "Fluted, stone-effect and louvered panels for feature walls.",
@@ -152,16 +162,7 @@ export const categories: Category[] = [
     image: carpetImg,
     subcategories: [],
   },
-  {
-    slug: "carpet-tiles",
-    name: "Carpet Tiles",
-    blurb: "Modular carpet tiles for commercial and residential spaces — easy to install, replace and maintain.",
-    image: carpetTilesImg,
-    subcategories: [
-      { slug: "PP", name: "PP Carpet Tiles" },
-      { slug: "Nylon", name: "Nylon Carpet Tiles" },
-    ],
-  },
+  
   {
     slug: "curtains",
     name: "Curtains",
@@ -244,6 +245,29 @@ export const products: Product[] = [
     image: spcImg,
     features: ["100% waterproof", "Rigid dent-resistant core", "Integrated underlay options", "Underfloor heating compatible"],
     variations: [ "5mm", "Stone & wood décors"],
+  },
+   {
+    id: "PP-carpet-tiles",
+    name: "PP Carpet Tiles",
+    category: "carpet-tiles",
+    subcategory: "PP",
+    description:
+      "Low-profile modular carpet tiles designed for commercial offices — anti-static, stain-resistant and easy to lift and replace.",
+    image: ppcarpetTilesImg,
+    features: ["Stain-resistant fibres", "Anti-static backing", "Quick individual replacement", "Sound absorbing"],
+    variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Patterned", "Loop pile"],
+      featured: true,
+  },
+  {
+    id: "Nylon-carpet-tiles",
+    name: "Nylon Carpet Tiles",
+    category: "carpet-tiles",
+    subcategory: "Nylon",
+    description:
+      "High-traffic rated carpet tiles with dense loop construction and reinforced bitumen backing for retail, hospitality and busy offices.",
+    image: nyloncarpetTilesImg,
+    features: ["Heavy traffic rating", "Dense loop pile", "Reinforced bitumen/PVC backing", "Long lifespan"],
+    variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Multi-colour mix", "Textured loop"],
   },
   {
     id: "pvc-panel",
@@ -399,29 +423,7 @@ export const products: Product[] = [
     features: ["Natural wool blend", "Acoustic insulation", "Stain-treated options", "Wall-to-wall installation"],
     variations: ["Plain", "Patterned", "Custom rug sizes"],
   },
-  {
-    id: "PP-carpet-tiles",
-    name: "PP Carpet Tiles",
-    category: "carpet-tiles",
-    subcategory: "PP",
-    description:
-      "Low-profile modular carpet tiles designed for commercial offices — anti-static, stain-resistant and easy to lift and replace.",
-    image: ppcarpetTilesImg,
-    features: ["Stain-resistant fibres", "Anti-static backing", "Quick individual replacement", "Sound absorbing"],
-    variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Patterned", "Loop pile"],
-      featured: true,
-  },
-  {
-    id: "Nylon-carpet-tiles",
-    name: "Nylon Carpet Tiles",
-    category: "carpet-tiles",
-    subcategory: "Nylon",
-    description:
-      "High-traffic rated carpet tiles with dense loop construction and reinforced bitumen backing for retail, hospitality and busy offices.",
-    image: nyloncarpetTilesImg,
-    features: ["Heavy traffic rating", "Dense loop pile", "Reinforced bitumen/PVC backing", "Long lifespan"],
-    variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Multi-colour mix", "Textured loop"],
-  },
+
   {
     id: "curtains",
     name: "Curtains",
