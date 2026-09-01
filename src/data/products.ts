@@ -186,7 +186,7 @@ export const products: Product[] = [
     category: "wooden-flooring",
     subcategory: "chinese",
     description:
-      "Value-focused laminate wood flooring with a realistic grain emboss and a durable wear layer — ideal for bedrooms and low-traffic living areas.",
+      "This is usually the flooring we recommend when a client has a tight budget but still wants a real wood look. It's an MDF/HDF laminate with a realistic grain emboss on top, so from a few feet away it reads as genuine timber — it just isn't built for heavy daily traffic, which is why we mostly install it in bedrooms and lower-traffic living areas. It clicks together without glue, so fitting is quick, and Steiner Design Interior stocks it in matte and high-gloss finishes, plus herringbone and 3D parquet patterns if you want something more than a plain plank look.",
     image: chineseWoodenImg,
     features: [ "MDF/HDF" , "Scratch-resistant wear layer", "Click-lock installation", "Wide shade range", "Budget friendly"],
     variations: ["8mm","10mm", "12mm", "Matte & High-gloss finishes" , "Herringbone", "3d parquet flooring"],
