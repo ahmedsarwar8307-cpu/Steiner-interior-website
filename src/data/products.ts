@@ -197,7 +197,7 @@ export const products: Product[] = [
     category: "wooden-flooring",
     subcategory: "german",
     description:
-      "Premium European-engineered planks with high abrasion classes and precise milling for a seamless, long-lasting floor.",
+      "If a client asks us for the option that'll genuinely last the longest, this is usually what we point them to. It's European-engineered with a moisture-treated HDF core and a higher abrasion rating than most laminates on the market, which in plain terms means it resists scratching and daily wear much better over time. We stock it in oak, walnut, and ash tones, and it comes with a longer warranty than our other wooden flooring lines — worth the extra cost if you're flooring a space you don't want to redo again in five years.",
     image:germanWoodenImg,   // ← its own real photo
     features: ["HDF", "Moisture-treated core", "Precision click system", "Long-term warranty"],
     variations: ["8mm","12mm", "Oak, walnut & ash tones"],
@@ -208,7 +208,7 @@ export const products: Product[] = [
     category: "wooden-flooring",
     subcategory: "turkish",
     description:
-      "Warm, character-rich Turkish planks balancing natural aesthetics with everyday durability for family homes.",
+      "This one sits right in the middle for us — better wear resistance than our budget laminate, without stepping all the way up to German pricing. It has a warm, natural grain finish with a low-gloss surface, so it doesn't have that overly shiny laminate look some cheaper floors do. We install this a lot in family homes specifically, since it holds up well to daily use without asking clients to pay a premium for it.",
     image: turkishWoodenImg,
     features: ["Natural grain finishes", "AC3 / AC4 abrasion class", "Low-gloss surface", "Stable HDF core"],
     variations: ["8mm", "12mm",],
@@ -220,7 +220,7 @@ export const products: Product[] = [
     category: "vinyl-flooring",
     subcategory: "local-made",
     description:
-      "Cost-effective locally manufactured vinyl sheets and planks — quick to install and simple to maintain.",
+      "When a client needs a floor down fast and isn't working with a big budget, this is usually the answer. It's manufactured locally, which keeps the cost down and means Steiner Design Interior can usually get it in stock and installed quickly without waiting on imports. It's fully water resistant, so it works fine in kitchens and bathrooms, and we offer it as both sheet rolls and individual planks depending on the space.",
     image: localvinylImg,
     features: ["Water resistant", "Fast installation", "Wide stock availability", "Economical"],
     variations: ["Sheet roll", "Plank", "1.3mm"],
@@ -231,7 +231,7 @@ export const products: Product[] = [
     category: "vinyl-flooring",
     subcategory: "imported",
     description:
-      "Luxury vinyl planks with deeper texture, thicker wear layers and refined colour matching for premium interiors.",
+      "This is the step up from our local vinyl range, and the difference is mostly in the wear layer — it's noticeably thicker, so it holds up better under commercial-level foot traffic, and the wood and stone textures are more convincing up close. We'd recommend this over the local option for offices, retail spaces, or any home where you want vinyl's practicality but don't want it to look obviously like vinyl.",
     image: importedvinylImg,
     features: ["Thick wear layer", "Realistic wood & stone texture", "Dimensionally stable", "Commercial grade"],
     variations: ["1.3mm", "5mm", "Matt & semi-gloss finishes"],
@@ -241,7 +241,7 @@ export const products: Product[] = [
     name: "SPC Flooring",
     category: "spc-flooring",
     description:
-      "Rigid stone-polymer core flooring — fully waterproof, dent resistant and suited to kitchens, offices and high-traffic spaces.",
+      "At Steiner Design Interior, SPC is usually what we recommend when a client tells us they're tired of replacing flooring every few years. It's built with a rigid stone-polymer core, which basically means it won't dent, swell, or warp even if water sits on it — so it works well in kitchens, offices, or anywhere that gets a lot of daily traffic. If you like the look of wood or marble but don't want the upkeep that comes with it, this is usually the middle ground we point clients toward.",
     image: spcImg,
     features: ["100% waterproof", "Rigid dent-resistant core", "Integrated underlay options", "Underfloor heating compatible"],
     variations: [ "5mm", "Stone & wood décors"],
@@ -252,7 +252,7 @@ export const products: Product[] = [
     category: "carpet-tiles",
     subcategory: "PP",
     description:
-      "Low-profile modular carpet tiles designed for commercial offices — anti-static, stain-resistant and easy to lift and replace.",
+      "For office spaces, we usually steer clients away from regular carpet and toward tiles like these instead — here's why. If one tile gets stained or damaged, we can lift and swap just that one piece instead of redoing the whole floor. Steiner Design Interior fits these often in offices and commercial spaces, especially around workstations and server areas, since they're built to resist static buildup too.",
     image: ppcarpetTilesImg,
     features: ["Stain-resistant fibres", "Anti-static backing", "Quick individual replacement", "Sound absorbing"],
     variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Patterned", "Loop pile"],
@@ -275,7 +275,7 @@ export const products: Product[] = [
     category: "wall-panels",
     subcategory: "pvc",
     description:
-      "Lightweight PVC wall panels with printed and marble-effect finishes for fast, clean wall transformations.",
+      "These are the fastest way we know to transform a wall without a long installation process. They're lightweight PVC sheets printed with a marble or wood-texture finish, they install dry (no waiting on adhesive to cure), and they wipe clean easily — genuinely practical for kitchens, bathrooms, or any wall that gets touched or splashed often. Steiner Design Interior keeps these in marble effect, wood texture, and plain matte finishes.",
     image: pvcpanelImg,
     features: ["Moisture proof", "Easy to clean", "Quick dry installation", "Large format sheets"],
     variations: ["Marble effect", "Wood texture", "Plain matte"],
@@ -286,7 +286,7 @@ export const products: Product[] = [
     category: "wall-panels",
     subcategory: "wpc",
     description:
-      "Wood-plastic composite louvre panels delivering warm, acoustic-friendly fluted feature walls.",
+      "If a client wants a feature wall that also helps with room acoustics, this is what we usually suggest. They're a wood-plastic composite with a fluted, grooved surface — the grooves aren't just decorative, they actually help soften sound in the room, which makes a real difference in lounges or media rooms. They're also termite-proof, unlike solid timber slats, and we install them with concealed fixings so you don't see a single screw on the finished wall.",
     image: wpcpanelImg,
     features: ["Acoustic softening", "Warm wood finishes", "Termite proof", "Concealed fixing"],
     variations: ["high grooves", "fluted", "Oak, walnut, charcoal"],
@@ -297,7 +297,7 @@ export const products: Product[] = [
     category: "wall-panels",
     subcategory: "pu-stone",
     description:
-      "Lightweight polyurethane stone panels reproducing natural stone texture without the structural load.",
+      "A lot of clients come to us wanting a stone feature wall, but real stone is heavy and expensive to install properly. That's exactly why Steiner Design Interior stocks PU stone panels — they give you the same textured, natural stone look, but they're made from lightweight polyurethane, so they go up faster and don't need extra wall reinforcement. We install these often in lounges, media walls, and showroom entrances where clients want a strong first impression without the cost of real stone.",
     image: pustonepanelsImg,
     features: ["Feather-light", "Realistic stone texture", "Interior & exterior grades", "Insulating"],
     variations: ["Ledge stone", "Brick", "Travertine"],
@@ -309,7 +309,7 @@ export const products: Product[] = [
     category: "wallpapers",
     subcategory: "chinese",
     description:
-      "Broad catalogue of printed and embossed wallpapers covering classic, floral and contemporary patterns.",
+      "This is our widest wallpaper range by far, covering everything from classic florals to more contemporary prints, so it's usually where we start when a client isn't sure yet what direction they want. It's a washable surface, which matters more than people expect — hallways and dining rooms get marked up over time, and being able to wipe it down keeps it looking new for longer. Available as non-woven, vinyl-coated, or 3D embossed depending on the texture you're after..",
     image: chinesewallpaperImg,
     features: ["Extensive design library", "Washable surface", "Roll-based pricing", "Fast availability"],
     variations: ["Non-woven", "Vinyl coated", "3D embossed"],
@@ -320,7 +320,7 @@ export const products: Product[] = [
     category: "wallpapers",
     subcategory: "korean",
     description:
-      "Refined Korean wallcoverings known for subtle texture, muted palettes and excellent print consistency.",
+      "Where our Chinese range is about variety, this range is about finish quality — Korean wallpaper mills are known for tighter print consistency and colours that don't fade or shift as fast under sunlight. It has a lower sheen than most wallpaper, which gives rooms a more refined, less printed look. Steiner Design Interior usually recommends this range specifically when a client cares more about how the wallpaper ages over the next few years than the upfront cost.",
     image: koreanwallpaperImg,
     features: ["Premium texture", "Colour-fast pigments", "Low sheen finishes", "Durable surface"],
     variations: ["Plain textures", "Micro patterns", "Silk effect"],
@@ -330,10 +330,10 @@ export const products: Product[] = [
     name: "Wooden Blinds",
     category: "window-blinds",
     subcategory: "wooden",
-    description: "Natural and faux-wood venetian slats offering warm light control with a classic finish.",
+    description: "These give you the warmth of real wood slats with the same tilt control you'd get from any venetian blind — open and close the angle to control how much light gets in without fully raising them. We offer both natural wood and a faux-wood option, which looks nearly identical but handles humidity better, so we'd usually recommend faux wood for kitchens or bathrooms and real wood everywhere else. Custom widths are made to order, and you can choose cord or wand operation depending on what's more convenient for the space.",
     image: woodenblindsImg,
     features: ["Tilt light control", "Natural & faux wood", "Custom widths", "Cord or wand operation"],
-    variations: ["vertian", "fox wood"],
+    variations: ["venetian", "faux wood"],
   },
   {
     id: "zebra-blinds",
