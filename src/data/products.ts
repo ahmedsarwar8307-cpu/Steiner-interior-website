@@ -386,7 +386,7 @@ export const products: Product[] = [
     "This is our thinnest pile, and we mainly recommend it for wall decor and feature walls, not the ground — it gives a clean, green textured surface indoors without any of the upkeep real plants need. It can be used on flooring too, for balconies or small indoor corners, but wall decor is genuinely where most clients end up using this size.",
   image: grass10mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["2m roll width", "4m roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
 },
 {
   id: "artificial-grass-15mm",
@@ -397,7 +397,7 @@ export const products: Product[] = [
     "Like our 10mm, this is mainly used for wall decor and feature walls rather than as ground cover — slightly denser, so it has a bit more texture and depth up close. It can still be used on the ground for balconies or small indoor spaces if that's what a client wants, but most of our installs at this size are decorative, not functional flooring.",
   image: grass15mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["2m roll width", "4m roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
 },
 {
   id: "artificial-grass-20mm",
@@ -408,7 +408,7 @@ export const products: Product[] = [
     "This is where we start recommending grass for actual outdoor use — terraces, play areas, and lighter garden spaces. It's got enough pile height to feel comfortable underfoot, but it's not so dense that it's a hassle to maintain. A common middle-ground pick when a client wants real outdoor grass without going for the heaviest option we carry.",
   image: grass20mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["2m roll width", "4m roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
 },
 {
   id: "artificial-grass-30mm",
@@ -419,7 +419,7 @@ export const products: Product[] = [
     "Same use case as our 20mm — terraces and play areas — but noticeably fuller and lusher underfoot. If a client's comparing the two in person, this is usually the one that visually reads as nicer grass, though it costs a bit more and holds slightly more heat in direct sun.",
   image: grass30mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["2m roll width", "4m roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
 },
 {
   id: "artificial-grass-40mm",
@@ -430,7 +430,7 @@ export const products: Product[] = [
     "This is where we move into proper garden and landscaping territory. The pile is dense enough to hold its shape over a large lawn area and genuinely looks like grass from normal viewing distance, not just up close. Steiner Design Interior usually installs this for clients doing a full garden makeover rather than a small patch.",
   image: grass40mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["2m roll width", "4m roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
 },
 {
   id: "artificial-grass-50mm",
@@ -441,7 +441,7 @@ export const products: Product[] = [
     "Our thickest, most premium pile — for clients who want their lawn to look genuinely lush and full, not just presentable. It's the most realistic-looking option we carry from a distance, though it's also the highest maintenance in terms of keeping the fibres standing upright over time. We'd recommend it for feature lawns and premium landscape work specifically, not high-traffic play areas.",
   image: grass50mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["2m roll width", "4m roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
 },
   {
     id: "sports-flooring",
