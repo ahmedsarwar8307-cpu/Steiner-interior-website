@@ -419,7 +419,7 @@ export const products: Product[] = [
     "Same use case as our 20mm — terraces and play areas — but noticeably fuller and lusher underfoot. If a client's comparing the two in person, this is usually the one that visually reads as nicer grass, though it costs a bit more and holds slightly more heat in direct sun.",
   image: grass30mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width","6ft roll width" , "Custom cut"],
 },
 {
   id: "artificial-grass-40mm",
@@ -430,7 +430,7 @@ export const products: Product[] = [
     "This is where we move into proper garden and landscaping territory. The pile is dense enough to hold its shape over a large lawn area and genuinely looks like grass from normal viewing distance, not just up close. Steiner Design Interior usually installs this for clients doing a full garden makeover rather than a small patch.",
   image: grass40mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width","6ft roll width" , "Custom cut"],
 },
 {
   id: "artificial-grass-50mm",
@@ -441,7 +441,7 @@ export const products: Product[] = [
     "Our thickest, most premium pile — for clients who want their lawn to look genuinely lush and full, not just presentable. It's the most realistic-looking option we carry from a distance, though it's also the highest maintenance in terms of keeping the fibres standing upright over time. We'd recommend it for feature lawns and premium landscape work specifically, not high-traffic play areas.",
   image: grass50mmImg,
   features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-  variations: ["Lush Green","Natural Touch","12ft roll width", "Custom cut"],
+  variations: ["Lush Green","Natural Touch","12ft roll width", "6ft roll width" ,"Custom cut"],
 },
   {
     id: "sports-flooring",
