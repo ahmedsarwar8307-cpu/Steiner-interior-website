@@ -264,7 +264,7 @@ export const products: Product[] = [
     category: "carpet-tiles",
     subcategory: "Nylon",
     description:
-      "High-traffic rated carpet tiles with dense loop construction and reinforced bitumen backing for retail, hospitality and busy offices.",
+      "Where our PP carpet tiles are built for everyday offices, this is the step up for spaces that take a genuine beating — retail floors, hospitality areas, and busy commercial spaces with constant foot traffic. The pile is denser and the backing's reinforced, so it holds up to far more wear before it starts looking tired. We'd recommend this over PP specifically when a client tells us the space sees heavy daily traffic, not just a normal office headcount.",
     image: nyloncarpetTilesImg,
     features: ["Heavy traffic rating", "Dense loop pile", "Reinforced bitumen/PVC backing", "Long lifespan"],
     variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Multi-colour mix", "Textured loop"],
@@ -340,7 +340,7 @@ export const products: Product[] = [
     name: "Zebra Blinds",
     category: "window-blinds",
     subcategory: "zebra",
-    description: "Dual-layer banded shades that shift between sheer and privacy with a simple pull.",
+    description: "These are the ones we recommend when a client wants more control than a plain roller blind gives them. The fabric has alternating sheer and solid stripes, so sliding it up or down lets you shift between soft, filtered light and full privacy without ever fully opening or closing the blind. Steiner Design Interior fits these a lot in living rooms and home offices, where people tend to adjust the light throughout the day rather than leave it one way.",
     image: zebrablindsImg,
     features: ["Day / night banding", "Modern minimal look", "Chain or motorised", "Wide fabric range"],
     variations: ["Sheer", "Blackout backing", "Motorised"],
@@ -350,7 +350,7 @@ export const products: Product[] = [
     name: "Roller Blinds",
     category: "window-blinds",
     subcategory: "roller",
-    description: "Clean single-fabric roller shades — the most versatile option for offices and living spaces.",
+    description: "If a client just wants something clean and low-fuss, this is usually where we start. It's a single flat fabric that rolls up out of the way completely, so there's no bulk or stacking at the top of the window like you get with some other blind types. We offer it in sunscreen, dim-out, and full blackout fabrics, so the same simple style works whether it's going in an office, a living room, or a bedroom.",
     image: rollerblindsImg,
     features: ["Sunscreen & blackout fabrics", "Slim cassette option", "Easy operation", "Custom sizing"],
     variations: ["Sunscreen", "Dim-out", "Blackout"],
@@ -361,7 +361,7 @@ export const products: Product[] = [
     name: "Mini Blinds",
     category: "window-blinds",
     subcategory: "mini",
-    description: "Slim aluminium slat blinds for compact windows, kitchens and service areas.",
+    description: "These are built for smaller or awkward windows where a full-size blind doesn't really make sense — kitchens, bathrooms, and utility spaces mostly. The aluminium slats are slim, so they don't eat up much depth on the window frame, and they're moisture resistant, which matters in spaces like these more than people expect. Steiner Design Interior usually recommends these specifically when a client's tried a regular blind in a small window before and found it too bulky.",
     image: miniblindsImg,
     features: ["Slim profile", "Moisture resistant", "Precise tilt", "Economical"],
     variations: ["Matt", "wood texture"],
@@ -371,34 +371,84 @@ export const products: Product[] = [
     name: "Vertical Blinds",
     category: "window-blinds",
     subcategory: "vertical",
-    description: "Vertical louvre systems ideal for wide glazing, sliding doors and commercial interiors.",
+    description: "For wide windows or sliding doors, horizontal blinds usually don't work well — that's where vertical blinds come in. The louvres run top to bottom and rotate to control light, and because they stack neatly to one side, they don't interfere with the door opening and closing. We install these often in offices and homes with large glazed walls, where the sheer width of the window rules out most other blind options.",
     image: verticalblindsImg,
     features: ["Best for wide spans", "Rotating louvres", "Replaceable slats", "Office friendly"],
     variations: ["Wood texture", "Hard Fabric"],
   },
   
-  ...["10mm", "15mm", "20mm", "30mm", "40mm", "50mm"].map((mm) => ({
-    id: `artificial-grass-${mm}`,
-    name: `Artificial Grass ${mm}`,
-    category: "artificial-grass",
-    subcategory: mm.toLowerCase(),
-    description: `${mm} pile-height artificial turf with UV-stable fibres and a permeable backing — ${
-      Number.parseInt(mm) <= 15
-        ? "ideal for interiors, balconies and wall decor."
-        : Number.parseInt(mm) <= 30
-          ? "well suited to terraces, play areas and light landscaping."
-          : "a dense, lush pile for gardens and premium landscape work."
-    }`,
-    image: ({ "10mm": grass10mmImg, "15mm": grass15mmImg, "20mm": grass20mmImg, "30mm": grass30mmImg, "40mm": grass40mmImg, "50mm": grass50mmImg } as Record<string, string>)[mm] ?? grassImg,
-    features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
-    variations: ["2m roll width", "4m roll width", "Custom cut"],
-  })),
+  {
+  id: "artificial-grass-10mm",
+  name: "Artificial Grass 10mm",
+  category: "artificial-grass",
+  subcategory: "10mm",
+  description:
+    "This is our thinnest pile, and we mainly recommend it for wall decor and feature walls, not the ground — it gives a clean, green textured surface indoors without any of the upkeep real plants need. It can be used on flooring too, for balconies or small indoor corners, but wall decor is genuinely where most clients end up using this size.",
+  image: grass10mmImg,
+  features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
+  variations: ["2m roll width", "4m roll width", "Custom cut"],
+},
+{
+  id: "artificial-grass-15mm",
+  name: "Artificial Grass 15mm",
+  category: "artificial-grass",
+  subcategory: "15mm",
+  description:
+    "Like our 10mm, this is mainly used for wall decor and feature walls rather than as ground cover — slightly denser, so it has a bit more texture and depth up close. It can still be used on the ground for balconies or small indoor spaces if that's what a client wants, but most of our installs at this size are decorative, not functional flooring.",
+  image: grass15mmImg,
+  features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
+  variations: ["2m roll width", "4m roll width", "Custom cut"],
+},
+{
+  id: "artificial-grass-20mm",
+  name: "Artificial Grass 20mm",
+  category: "artificial-grass",
+  subcategory: "20mm",
+  description:
+    "This is where we start recommending grass for actual outdoor use — terraces, play areas, and lighter garden spaces. It's got enough pile height to feel comfortable underfoot, but it's not so dense that it's a hassle to maintain. A common middle-ground pick when a client wants real outdoor grass without going for the heaviest option we carry.",
+  image: grass20mmImg,
+  features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
+  variations: ["2m roll width", "4m roll width", "Custom cut"],
+},
+{
+  id: "artificial-grass-30mm",
+  name: "Artificial Grass 30mm",
+  category: "artificial-grass",
+  subcategory: "30mm",
+  description:
+    "Same use case as our 20mm — terraces and play areas — but noticeably fuller and lusher underfoot. If a client's comparing the two in person, this is usually the one that visually reads as nicer grass, though it costs a bit more and holds slightly more heat in direct sun.",
+  image: grass30mmImg,
+  features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
+  variations: ["2m roll width", "4m roll width", "Custom cut"],
+},
+{
+  id: "artificial-grass-40mm",
+  name: "Artificial Grass 40mm",
+  category: "artificial-grass",
+  subcategory: "40mm",
+  description:
+    "This is where we move into proper garden and landscaping territory. The pile is dense enough to hold its shape over a large lawn area and genuinely looks like grass from normal viewing distance, not just up close. Steiner Design Interior usually installs this for clients doing a full garden makeover rather than a small patch.",
+  image: grass40mmImg,
+  features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
+  variations: ["2m roll width", "4m roll width", "Custom cut"],
+},
+{
+  id: "artificial-grass-50mm",
+  name: "Artificial Grass 50mm",
+  category: "artificial-grass",
+  subcategory: "50mm",
+  description:
+    "Our thickest, most premium pile — for clients who want their lawn to look genuinely lush and full, not just presentable. It's the most realistic-looking option we carry from a distance, though it's also the highest maintenance in terms of keeping the fibres standing upright over time. We'd recommend it for feature lawns and premium landscape work specifically, not high-traffic play areas.",
+  image: grass50mmImg,
+  features: ["UV stabilised fibres", "Permeable drainage backing", "Non-toxic & pet friendly", "Low maintenance"],
+  variations: ["2m roll width", "4m roll width", "Custom cut"],
+},
   {
     id: "sports-flooring",
     name: "Sports Flooring",
     category: "sports-flooring",
     description:
-      "Multipurpose sports surfaces with controlled shock absorption and slip resistance for indoor courts and gyms.",
+      "We install this for indoor courts, gyms, and multi-purpose activity halls specifically — badminton and basketball courts, school gymnasiums, martial arts and fitness studios, and community sports halls are the most common projects we do with this. It has built-in shock absorption, so it reduces joint strain during high-impact activity, and a slip-resistant surface that still performs safely even when the floor gets sweaty or damp. We also do the court line-marking as part of the install, so you're not left sourcing that separately — available in 4.5mm and 5mm thicknesses, or as gym rubber tiles if it's a weights area rather than a court.",
     image: sportsImg,
     features: ["Shock absorption", "Slip-resistant surface", "Line marking service", "Indoor court grades"],
     variations: ["4.5mm", "5.5mm", "Gym rubber tiles"],
@@ -408,7 +458,7 @@ export const products: Product[] = [
     name: "Wall Mouldings",
     category: "wall-mouldings",
     description:
-      "Panel mouldings, cornices, skirting and trims that add architectural rhythm and finish to plain walls.",
+      "These are the small details that usually end up making the biggest difference to how finished a room feels — cornices where the wall meets the ceiling, skirting along the floor, and panel trims that break up a plain wall into something more architectural. Steiner Design Interior fits these using PS, PU, or MDF profiles depending on the room and budget, and everything's mitre-cut on site so corners line up properly instead of looking like an afterthought. We do this a lot as a finishing step on rooms we've already floored or panelled, but it works just as well as a standalone upgrade to an existing space.",
     image: mouldingImg,
     features: ["Paint-ready profiles", "Moisture resistant options", "Mitre-cut on site", "Custom layouts"],
     variations: ["PS profiles", "PU profiles", "MDF profiles"],
@@ -418,7 +468,7 @@ export const products: Product[] = [
     name: "Woolen Carpet",
     category: "woolen-carpet",
     description:
-      "Dense woolen wall-to-wall carpeting delivering warmth, acoustic comfort and a soft underfoot feel.",
+      "This is our option for clients who want an actual soft, warm floor underfoot — not vinyl or SPC pretending to be soft, real wool wall-to-wall carpeting. It's noticeably better at dampening sound than hard flooring, which matters more than people expect in bedrooms and quiet living spaces above another floor. We offer it plain or patterned, and can also do custom rug sizing if you want it as a defined area rather than covering the whole room.",
     image: carpetImg,
     features: ["Natural wool blend", "Acoustic insulation", "Stain-treated options", "Wall-to-wall installation"],
     variations: ["Plain", "Patterned", "Custom rug sizes"],
@@ -429,7 +479,7 @@ export const products: Product[] = [
     name: "Curtains",
     category: "curtains",
     description:
-      "Made-to-measure curtains — sheers, linens, jute, velvets and blackout linings with tracks and motorisation.",
+      "Every set we make is measured for the specific window, not sold off a rack, so the fit is always right — we offer sheer, blackout, and layered combinations depending on how much light control a client actually wants. Pleat style makes a real visual difference too — pinch pleat and eyelet give a more structured, formal look, while wave fold sits looser and more relaxed. For bedrooms or media rooms specifically, we can also add a motorised track, so you're not manually pulling heavy blackout curtains every night.",
     image: curtainsImg,
     features: ["Made to measure", "Sheer & blackout layers", "Motorised track option", "On-site measurement"],
     variations: ["Pinch pleat", "Wave / ripple fold", "Eyelet", "Roman"],
@@ -439,7 +489,7 @@ export const products: Product[] = [
     name: "Media Walls",
     category: "media-walls",
     description:
-      "Bespoke media walls combining fluted wood, stone, marble inserts and concealed lighting with cable management.",
+      "This is one of our more involved builds — we design it around your actual TV size, seating layout, and the room's proportions first, then bring in materials like fluted wood, stone, or marble inserts to give it real depth rather than a flat panel with a TV mounted on it. Cable management is built in from the start, so there's nothing hanging or visible once it's finished, and we can integrate LED lighting into the design if that's the look you're after. We usually show clients a 3D preview before we start building, so there are no surprises once installation begins.",
     image: mediaWallImg,
     features: ["Custom design & 3D preview", "Concealed cable routing", "Integrated LED lighting", "Complete installation"],
     variations: ["Wood & marble", "Fluted panel", "Full-wall unit","custom designs"],
