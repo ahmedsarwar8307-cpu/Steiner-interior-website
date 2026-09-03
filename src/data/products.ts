@@ -32,8 +32,8 @@ import mediaWallImg from "@/assets/media-wall.jpeg";
 import germanWoodenImg from "@/assets/german-wooden-flooring.jpeg";
 import turkishWoodenImg from "@/assets/turkish-wooden-flooring.jpeg";
 import chineseWoodenImg from "@/assets/chinese-wooden-flooring.jpeg";
-import chineseWoodenImg2 from "@/assets/wf-chinesesb-1005.jpeg";
-import chineseWoodenImg3 from "@/assets/wf-chinesesb-1006.jpeg";
+import chineseWoodenImg2 from "@/assets/wf-chinese/sb-1005.jpeg";
+import chineseWoodenImg3 from "@/assets/wf-chinese/sb-1006.jpeg";
 import pustonepanelsImg from "@/assets/pu-stone-panel.jpeg";
 import rollerblindsImg from "@/assets/roller-blind.jpeg";
 export type Category = {
@@ -192,7 +192,7 @@ export const products: Product[] = [
     description:
       "This is usually the flooring we recommend when a client has a tight budget but still wants a real wood look. It's an MDF/HDF laminate with a realistic grain emboss on top, so from a few feet away it reads as genuine timber — it just isn't built for heavy daily traffic, which is why we mostly install it in bedrooms and lower-traffic living areas. It clicks together without glue, so fitting is quick, and Steiner Design Interior stocks it in matte and high-gloss finishes, plus herringbone and 3D parquet patterns if you want something more than a plain plank look.",
     image: chineseWoodenImg,
-     images: [chineseWoodenImg, chineseWoodenImg2, chineseWoodenImg3],  // add this line for a gallery
+     images: [chineseWoodenImg2, chineseWoodenImg3],  // add this line for a gallery
   pdfs: [{ name: "HDF Reinforced Wood Flooring", file: "/pdfs/HDFWF-8mm-chinese.pdf" }],  // add this for PDFs
     features: [ "MDF/HDF" , "Scratch-resistant wear layer", "Click-lock installation", "Wide shade range", "Budget friendly"],
     variations: ["8mm","10mm", "12mm", "Matte & High-gloss finishes" , "Herringbone", "3d parquet flooring"],
