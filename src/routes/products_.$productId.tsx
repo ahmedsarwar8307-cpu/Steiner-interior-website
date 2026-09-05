@@ -10,6 +10,8 @@ import { waMessages } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
 import { AreaCalculator } from "@/components/AreaCalculator";
 import { categoryToCalculatorTab } from "@/lib/calculator";
+import { ProductImageCarousel } from "@/components/ProductImageCarousel";
+import { ProductPdfs } from "@/components/ProductPdfs";
 
 export const Route = createFileRoute("/products_/$productId")({
   loader: ({ params }) => {
@@ -56,16 +58,9 @@ function ProductDetail() {
           </Link>
 
           <div className="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-16">
-            <Reveal>
-              <img
-                src={product.image}
-                alt={product.name}
-                loading="lazy"
-                width={1200}
-                height={900}
-                className="w-full rounded-sm object-cover shadow-lift"
-              />
-            </Reveal>
+           <Reveal>
+  <ProductImageCarousel images={product.images} fallback={product.image} alt={product.name} />
+</Reveal>
 
             <Reveal delay={0.08}>
               <p className="eyebrow">{categoryName(product.category)}</p>
@@ -115,7 +110,7 @@ function ProductDetail() {
               </div>
             </Reveal>
                    </div>
-
+{product.pdfs?.length ? <ProductPdfs pdfs={product.pdfs} /> : null}
           {calcTab ? (
             <div className="mt-24 border-t border-border pt-16">
               <h2 className="text-3xl">How Much Do You Need?</h2>
