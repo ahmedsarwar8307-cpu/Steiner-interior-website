@@ -3,12 +3,12 @@ import { Download, ExternalLink } from "lucide-react";
 export function ProductPdfs({ pdfs }: { pdfs: { name: string; file: string }[] }) {
   return (
     <div className="mt-24 border-t border-border pt-16">
-      <h2 className="text-3xl">Spec Sheets &amp; Samples</h2>
+      <h2 className="text-3xl">HDF Flooring &amp; PDF</h2>
       <p className="mt-2 max-w-xl text-sm text-muted-foreground">
         View or download detailed specifications for this product.
       </p>
 
-      <div className="mt-8 grid gap-8">
+ <div className="mt-8 grid gap-8 sm:grid-cols-2">
         {pdfs.map((pdf) => (
           <div key={pdf.file} className="rounded-sm border border-border bg-card p-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
@@ -35,7 +35,7 @@ export function ProductPdfs({ pdfs }: { pdfs: { name: string; file: string }[] }
             <iframe
               src={pdf.file}
               title={pdf.name}
-              className="mt-4 h-[420px] w-full rounded-sm border border-border"
+              className="mt-4 h-[240px] w-full rounded-sm border border-border"
             />
           </div>
         ))}
