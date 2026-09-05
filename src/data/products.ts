@@ -32,8 +32,8 @@ import mediaWallImg from "@/assets/media-wall.jpeg";
 import germanWoodenImg from "@/assets/german-wooden-flooring.jpeg";
 import turkishWoodenImg from "@/assets/turkish-wooden-flooring.jpeg";
 import chineseWoodenImg from "@/assets/chinese-wooden-flooring.jpeg";
-import chineseWoodenImg2 from "@/assets/wf-chinese/sb-1005.jpeg";
-import chineseWoodenImg3 from "@/assets/wf-chinese/sb-1006.jpeg";
+import chineseWoodenImg2 from "@/assets/wf-chinese/sb-1001.jpeg";
+import chineseWoodenImg3 from "@/assets/wf-chinese/sb-1005.jpeg";
 import pustonepanelsImg from "@/assets/pu-stone-panel.jpeg";
 import rollerblindsImg from "@/assets/roller-blind.jpeg";
 export type Category = {
