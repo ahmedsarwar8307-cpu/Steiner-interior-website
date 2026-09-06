@@ -26,6 +26,9 @@ import mouldingImg from "@/assets/cat-wall-mouldings.jpg";
 import carpetImg from "@/assets/cat-woolen-carpet.jpg";
 import carpetTilesImg from "@/assets/cat-carpet-tiles.jpeg";
 import ppcarpetTilesImg from "@/assets/pp-carpet-tile.jpeg";
+const ppCarpettilesGallery = Object.values(
+  import.meta.glob("@/assets/pp-carpettiles/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
 import nyloncarpetTilesImg from "@/assets/nylon-carpet-tile.jpeg";
 import curtainsImg from "@/assets/curtains.jpeg";
 import mediaWallImg from "@/assets/media-wall.jpeg";
@@ -39,6 +42,9 @@ const wfChineseGallery = Object.values(
   import.meta.glob("@/assets/wf-chinese/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
 import pustonepanelsImg from "@/assets/pu-stone-panel.jpeg";
+const pustoneGallery = Object.values(
+  import.meta.glob("@/assets/pu-stone/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
 import rollerblindsImg from "@/assets/roller-blind.jpeg";
 export type Category = {
   slug: string;
@@ -267,6 +273,7 @@ export const products: Product[] = [
     description:
       "For office spaces, we usually steer clients away from regular carpet and toward tiles like these instead — here's why. If one tile gets stained or damaged, we can lift and swap just that one piece instead of redoing the whole floor. Steiner Design Interior fits these often in offices and commercial spaces, especially around workstations and server areas, since they're built to resist static buildup too.",
     image: ppcarpetTilesImg,
+    images: ppCarpettilesGallery,  
     features: ["Stain-resistant fibres", "Anti-static backing", "Quick individual replacement", "Sound absorbing"],
     variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Patterned", "Loop pile"],
       featured: true,
@@ -312,6 +319,7 @@ export const products: Product[] = [
     description:
       "A lot of clients come to us wanting a stone feature wall, but real stone is heavy and expensive to install properly. That's exactly why Steiner Design Interior stocks PU stone panels — they give you the same textured, natural stone look, but they're made from lightweight polyurethane, so they go up faster and don't need extra wall reinforcement. We install these often in lounges, media walls, and showroom entrances where clients want a strong first impression without the cost of real stone.",
     image: pustonepanelsImg,
+    images: pustoneGallery,  
     features: ["Feather-light", "Realistic stone texture", "Interior & exterior grades", "Insulating"],
     variations: ["Ledge stone", "Brick", "Travertine"],
       featured: true,

@@ -3,7 +3,7 @@ import { Download, ExternalLink } from "lucide-react";
 export function ProductPdfs({ pdfs }: { pdfs: { name: string; file: string }[] }) {
   return (
     <div className="mt-24 border-t border-border pt-16">
-      <h2 className="text-3xl">HDF Flooring &amp; PDF</h2>
+      <h2 className="text-3xl">Digital Catalogue &amp; PDF</h2>
       <p className="mt-2 max-w-xl text-sm text-muted-foreground">
         View or download detailed specifications for this product.
       </p>
@@ -38,7 +38,7 @@ export function ProductPdfs({ pdfs }: { pdfs: { name: string; file: string }[] }
               className="mt-4 h-[120px] w-full rounded-sm border border-border"
             />
           </div>
-        ))}
+        ))}  
       </div>
     </div>
   );
