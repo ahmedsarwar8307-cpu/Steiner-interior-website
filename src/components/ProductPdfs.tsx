@@ -35,7 +35,7 @@ export function ProductPdfs({ pdfs }: { pdfs: { name: string; file: string }[] }
             <iframe
               src={pdf.file}
               title={pdf.name}
-              className="mt-4 h-[240px] w-full rounded-sm border border-border"
+              className="mt-4 h-[120px] w-full rounded-sm border border-border"
             />
           </div>
         ))}
