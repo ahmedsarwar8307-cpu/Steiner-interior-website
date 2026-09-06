@@ -27,7 +27,7 @@ import carpetImg from "@/assets/cat-woolen-carpet.jpg";
 import carpetTilesImg from "@/assets/cat-carpet-tiles.jpeg";
 import ppcarpetTilesImg from "@/assets/pp-carpet-tile.jpeg";
 const ppCarpettilesGallery = Object.values(
-  import.meta.glob("@/assets/pp-carpettiles/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+  import.meta.glob("@/assets/pp-carpettile/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
 import nyloncarpetTilesImg from "@/assets/nylon-carpet-tile.jpeg";
 import curtainsImg from "@/assets/curtains.jpeg";
