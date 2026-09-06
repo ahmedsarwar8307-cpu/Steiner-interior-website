@@ -30,6 +30,9 @@ import nyloncarpetTilesImg from "@/assets/nylon-carpet-tile.jpeg";
 import curtainsImg from "@/assets/curtains.jpeg";
 import mediaWallImg from "@/assets/media-wall.jpeg";
 import germanWoodenImg from "@/assets/german-wooden-flooring.jpeg";
+const wfGermanGallery = Object.values(
+  import.meta.glob("@/assets/wf-german/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
 import turkishWoodenImg from "@/assets/turkish-wooden-flooring.jpeg";
 import chineseWoodenImg from "@/assets/chinese-wooden-flooring.jpeg";
 const wfChineseGallery = Object.values(
@@ -205,7 +208,8 @@ export const products: Product[] = [
     subcategory: "german",
     description:
       "If a client asks us for the option that'll genuinely last the longest, this is usually what we point them to. It's European-engineered with a moisture-treated HDF core and a higher abrasion rating than most laminates on the market, which in plain terms means it resists scratching and daily wear much better over time. We stock it in oak, walnut, and ash tones, and it comes with a longer warranty than our other wooden flooring lines — worth the extra cost if you're flooring a space you don't want to redo again in five years.",
-    image:germanWoodenImg,   // ← its own real photo
+    image: wfGermanGallery[0]!,
+     images: wfGermanGallery,  // ← its own real photo
     features: ["HDF", "Moisture-treated core", "Precision click system", "Long-term warranty"],
     variations: ["8mm","12mm", "Oak, walnut & ash tones"],
   },
