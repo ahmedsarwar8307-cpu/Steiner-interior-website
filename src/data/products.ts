@@ -221,6 +221,8 @@ export const products: Product[] = [
     description:
       "This one sits right in the middle for us — better wear resistance than our budget laminate, without stepping all the way up to German pricing. It has a warm, natural grain finish with a low-gloss surface, so it doesn't have that overly shiny laminate look some cheaper floors do. We install this a lot in family homes specifically, since it holds up well to daily use without asking clients to pay a premium for it.",
     image: turkishWoodenImg,
+     pdfs: [{ name: "Effect Series AGT Flooring 8mm", file: "/pdf/EFFECT SERIES 8MM.pdf" },
+     { name: "Effect Series AGT Flooring 12mm", file: "/pdf/EFFECT SERIES 12MM.pdf" }],
     features: ["Natural grain finishes", "AC3 / AC4 abrasion class", "Low-gloss surface", "Stable HDF core"],
     variations: ["8mm", "12mm",],
       featured: true,
