@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "STEINER Design Interior",
   tagline: "The New Way of Life",
   shortDescription:
-    "A premium interior products studio specialising in flooring, wall solutions, window treatments and complete interior transformations.",
+    "A premium interior products studio specialising in flooring, wall solutions, window transformations and complete interior transformations.",
 
   /** WhatsApp number in international format, digits only (no +, spaces or dashes). */
   whatsappNumber: "923114978508",

@@ -60,12 +60,12 @@ export const services: Service[] = [
     description: "Refurbishment of tired interiors with minimal disruption.",
     icon: "Hammer",
   },
-  {
+ /* {
     slug: "space-transformation",
     title: "Space Transformation",
     description: "End-to-end reworking of layout, light, surface and finish.",
     icon: "Sparkles",
-  },
+  },*/
 ];
 
 export const whyChooseUs = [
