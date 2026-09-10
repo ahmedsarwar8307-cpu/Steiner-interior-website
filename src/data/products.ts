@@ -6,6 +6,9 @@ import spcImg from "@/assets/spc-flooring.jpeg";
 import panelsImg from "@/assets/cat-wall-panels.jpg";
 import pvcpanelImg from "@/assets/pvc-panel.jpeg";
 import wpcpanelImg from "@/assets/wpc-panel.jpeg";
+const wpcpanelGallery = Object.values(
+  import.meta.glob("@/assets/wpc-panel/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
 import wallpaperImg from "@/assets/cat-wallpapers.jpg";
 import koreanwallpaperImg from "@/assets/korean-wallpaper.jpeg";
 import chinesewallpaperImg from "@/assets/chinese-wallpaper.jpeg";
@@ -311,6 +314,7 @@ export const products: Product[] = [
     description:
       "If a client wants a feature wall that also helps with room acoustics, this is what we usually suggest. They're a wood-plastic composite with a fluted, grooved surface — the grooves aren't just decorative, they actually help soften sound in the room, which makes a real difference in lounges or media rooms. They're also termite-proof, unlike solid timber slats, and we install them with concealed fixings so you don't see a single screw on the finished wall.",
     image: wpcpanelImg,
+    images: wpcpanelGallery,
     features: ["Acoustic softening", "Warm wood finishes", "Termite proof", "Concealed fixing"],
     variations: ["high grooves", "fluted", "Oak, walnut, charcoal"],
   },
@@ -485,8 +489,8 @@ export const products: Product[] = [
       "These are the small details that usually end up making the biggest difference to how finished a room feels — cornices where the wall meets the ceiling, skirting along the floor, and panel trims that break up a plain wall into something more architectural. Steiner Design Interior fits these using PS, PU, or MDF profiles depending on the room and budget, and everything's mitre-cut on site so corners line up properly instead of looking like an afterthought. We do this a lot as a finishing step on rooms we've already floored or panelled, but it works just as well as a standalone upgrade to an existing space.",
     image: mouldingImg,
     images: wallmouldingGallery,
-    features: ["Paint-ready profiles", "Moisture resistant options", "Mitre-cut on site", "Custom layouts"],
-    variations: ["PS profiles", "PU profiles", "MDF profiles"],
+    features: [ "Moisture resistant options", "Mitre-cut on site", "Custom layouts"],
+    variations: ["PVC profiles", "PU profiles", "MDF profiles"],
   },
   {
     id: "woolen-carpet",
