@@ -23,6 +23,9 @@ import grass40mmImg from "@/assets/grass-40mm.jpeg";
 import grass50mmImg from "@/assets/grass-50mm.jpeg";
 import sportsImg from "@/assets/cat-sports-flooring.jpg";
 import mouldingImg from "@/assets/cat-wall-mouldings.jpg";
+const wallmouldingGallery = Object.values(
+  import.meta.glob("@/assets/wall-moulding/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
 import carpetImg from "@/assets/cat-woolen-carpet.jpg";
 import carpetTilesImg from "@/assets/cat-carpet-tiles.jpeg";
 import ppcarpetTilesImg from "@/assets/pp-carpet-tile.jpeg";
@@ -472,7 +475,7 @@ export const products: Product[] = [
       "We install this for indoor courts, gyms, and multi-purpose activity halls specifically — badminton and basketball courts, school gymnasiums, martial arts and fitness studios, and community sports halls are the most common projects we do with this. It has built-in shock absorption, so it reduces joint strain during high-impact activity, and a slip-resistant surface that still performs safely even when the floor gets sweaty or damp. We also do the court line-marking as part of the install, so you're not left sourcing that separately — available in 4.5mm and 5mm thicknesses, or as gym rubber tiles if it's a weights area rather than a court.",
     image: sportsImg,
     features: ["Shock absorption", "Slip-resistant surface", "Line marking service", "Indoor court grades"],
-    variations: ["4.5mm", "5.5mm", "Gym rubber tiles"],
+    variations: ["4.5mm", "5mm", "Gym rubber tiles"],
   },
   {
     id: "wall-mouldings",
@@ -481,6 +484,7 @@ export const products: Product[] = [
     description:
       "These are the small details that usually end up making the biggest difference to how finished a room feels — cornices where the wall meets the ceiling, skirting along the floor, and panel trims that break up a plain wall into something more architectural. Steiner Design Interior fits these using PS, PU, or MDF profiles depending on the room and budget, and everything's mitre-cut on site so corners line up properly instead of looking like an afterthought. We do this a lot as a finishing step on rooms we've already floored or panelled, but it works just as well as a standalone upgrade to an existing space.",
     image: mouldingImg,
+    images: wallmouldingGallery,
     features: ["Paint-ready profiles", "Moisture resistant options", "Mitre-cut on site", "Custom layouts"],
     variations: ["PS profiles", "PU profiles", "MDF profiles"],
   },
