@@ -31,11 +31,11 @@ const wallmouldingGallery = Object.values(
 ) as string[];
 import carpetImg from "@/assets/cat-woolen-carpet.jpg";
 import carpetTilesImg from "@/assets/cat-carpet-tiles.jpeg";
-import ppcarpetTilesImg from "@/assets/pp-carpet-tile.jpeg";
+/*import ppcarpetTilesImg from "@/assets/pp-carpet-tile.jpeg";
 const ppCarpettilesGallery = Object.values(
   import.meta.glob("@/assets/pp-carpettile/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
-import nyloncarpetTilesImg from "@/assets/nylon-carpet-tile.jpeg";
+import nyloncarpetTilesImg from "@/assets/nylon-carpet-tile.jpeg"; */
 import curtainsImg from "@/assets/curtains.jpeg";
 import mediaWallImg from "@/assets/media-wall.jpeg";
 import germanWoodenImg from "@/assets/german-wooden-flooring.jpeg";
@@ -69,6 +69,7 @@ export type Product = {
   image: string;
    images?: string[];
   pdfs?: { name: string; file: string }[];
+  seriesGroup?: string;
   features: string[];
   variations: string[];
   featured?: boolean;
@@ -271,7 +272,7 @@ export const products: Product[] = [
     features: ["100% waterproof", "Rigid dent-resistant core", "Integrated underlay options", "Underfloor heating compatible"],
     variations: [ "5mm", "Stone & wood décors"],
   },
-   {
+   /*{
     id: "PP-carpet-tiles",
     name: "PP Carpet Tiles",
     category: "carpet-tiles",
@@ -294,7 +295,18 @@ export const products: Product[] = [
     image: nyloncarpetTilesImg,
     features: ["Heavy traffic rating", "Dense loop pile", "Reinforced bitumen/PVC backing", "Long lifespan"],
     variations: ["50cm x 50cm", "10cm x 39cm", "Plain", "Multi-colour mix", "Textured loop"],
-  },
+  }, */
+  {
+  id: "carpet-tiles",
+  name: "Carpet Tiles",
+  category: "carpet-tiles",
+  description:
+    "Modular carpet tiles built for offices and commercial spaces — if one tile gets stained or damaged, we lift and replace just that piece instead of redoing the whole floor. We stock both PP and Nylon ranges, each available in multiple series and patterns — browse the options below to find the one that fits your space.",
+  image: carpetTilesImg,
+  seriesGroup: "carpet-tiles",
+  features: ["Anti-static backing", "Individually replaceable tiles", "PP and Nylon options", "Commercial-grade durability"],
+  variations: ["50cm x 50cm", "10cm x 39cm"],
+},
   {
     id: "pvc-panel",
     name: "PVC Panels",

@@ -21,6 +21,7 @@ import { Route as ServicesRouteImport } from './routes/services'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
 import { Route as VideosRouteImport } from './routes/videos'
+import { Route as CarpetTilesSeriesSlugRouteImport } from './routes/carpet-tiles.$seriesSlug'
 import { Route as ProductsProductIdRouteImport } from './routes/products_.$productId'
 import { Route as ProjectsSlugRouteImport } from './routes/projects_.$slug'
 
@@ -84,6 +85,11 @@ const VideosRoute = VideosRouteImport.update({
   path: '/videos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CarpetTilesSeriesSlugRoute = CarpetTilesSeriesSlugRouteImport.update({
+  id: '/carpet-tiles/$seriesSlug',
+  path: '/carpet-tiles/$seriesSlug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsProductIdRoute = ProductsProductIdRouteImport.update({
   id: '/products_/$productId',
   path: '/products/$productId',
@@ -108,6 +114,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/testimonials': typeof TestimonialsRoute
   '/videos': typeof VideosRoute
+  '/carpet-tiles/$seriesSlug': typeof CarpetTilesSeriesSlugRoute
   '/products/$productId': typeof ProductsProductIdRoute
   '/projects/$slug': typeof ProjectsSlugRoute
 }
@@ -124,6 +131,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/testimonials': typeof TestimonialsRoute
   '/videos': typeof VideosRoute
+  '/carpet-tiles/$seriesSlug': typeof CarpetTilesSeriesSlugRoute
   '/products/$productId': typeof ProductsProductIdRoute
   '/projects/$slug': typeof ProjectsSlugRoute
 }
@@ -141,6 +149,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/testimonials': typeof TestimonialsRoute
   '/videos': typeof VideosRoute
+  '/carpet-tiles/$seriesSlug': typeof CarpetTilesSeriesSlugRoute
   '/products_/$productId': typeof ProductsProductIdRoute
   '/projects_/$slug': typeof ProjectsSlugRoute
 }
@@ -159,6 +168,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/testimonials'
     | '/videos'
+    | '/carpet-tiles/$seriesSlug'
     | '/products/$productId'
     | '/projects/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -175,6 +185,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/testimonials'
     | '/videos'
+    | '/carpet-tiles/$seriesSlug'
     | '/products/$productId'
     | '/projects/$slug'
   id:
@@ -191,6 +202,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/testimonials'
     | '/videos'
+    | '/carpet-tiles/$seriesSlug'
     | '/products_/$productId'
     | '/projects_/$slug'
   fileRoutesById: FileRoutesById
@@ -208,6 +220,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   TestimonialsRoute: typeof TestimonialsRoute
   VideosRoute: typeof VideosRoute
+  CarpetTilesSeriesSlugRoute: typeof CarpetTilesSeriesSlugRoute
   ProductsProductIdRoute: typeof ProductsProductIdRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
 }
@@ -298,6 +311,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VideosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/carpet-tiles/$seriesSlug': {
+      id: '/carpet-tiles/$seriesSlug'
+      path: '/carpet-tiles/$seriesSlug'
+      fullPath: '/carpet-tiles/$seriesSlug'
+      preLoaderRoute: typeof CarpetTilesSeriesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products_/$productId': {
       id: '/products_/$productId'
       path: '/products/$productId'
@@ -328,6 +348,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   TestimonialsRoute: TestimonialsRoute,
   VideosRoute: VideosRoute,
+  CarpetTilesSeriesSlugRoute: CarpetTilesSeriesSlugRoute,
   ProductsProductIdRoute: ProductsProductIdRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
 }

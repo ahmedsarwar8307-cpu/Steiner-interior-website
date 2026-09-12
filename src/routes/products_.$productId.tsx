@@ -12,6 +12,7 @@ import { AreaCalculator } from "@/components/AreaCalculator";
 import { categoryToCalculatorTab } from "@/lib/calculator";
 import { ProductImageCarousel } from "@/components/ProductImageCarousel";
 import { ProductPdfs } from "@/components/ProductPdfs";
+import { CarpetSeriesGrid } from "@/components/CarpetSeriesGrid";
 
 export const Route = createFileRoute("/products_/$productId")({
   loader: ({ params }) => {
@@ -111,6 +112,7 @@ function ProductDetail() {
             </Reveal>
                    </div>
 {product.pdfs?.length ? <ProductPdfs pdfs={product.pdfs} /> : null}
+{product.seriesGroup ? <CarpetSeriesGrid /> : null} 
           {calcTab ? (
             <div className="mt-24 border-t border-border pt-16">
               <h2 className="text-3xl">How Much Do You Need?</h2>
