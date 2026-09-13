@@ -267,7 +267,7 @@ export const products: Product[] = [
   name: "Vinyl Flooring",
   category: "vinyl-flooring",
   description:
-    "We stock two grades of vinyl, depending on what a client needs. Our locally made range is the budget-friendly option — water resistant, quick to install, and readily in stock, good for a straightforward room refresh. Our imported range costs more but has a noticeably thicker wear layer and more convincing wood and stone textures, so we'd recommend it for offices or homes where you want vinyl's practicality without it looking obviously like vinyl.",
+    "Steiner Design Interior supplies and installs two grades of vinyl flooring, serving clients across Rawalpindi and Islamabad as well as other cities in Pakistan. Our locally manufactured range is the budget-conscious choice — water-resistant sheet or plank vinyl at 1.3mm, quick to install, and typically in stock for fast turnaround, which is what most homeowners doing a straightforward room refresh choose. Our imported range runs 1.3mm to 5mm with a thicker wear layer and sharper wood or stone texture printing, which is what we recommend to architects specifying for client projects or businesses fitting out offices, since it holds up to commercial foot traffic without reading as 'obviously vinyl' to visitors",
   image: localvinylImg,
   images: [localvinylImg, importedvinylImg],
   features: ["Water resistant", "Fast installation", "Local and imported grades", "Wood & stone textures"],
@@ -278,7 +278,7 @@ export const products: Product[] = [
     name: "SPC Flooring",
     category: "spc-flooring",
     description:
-      "At Steiner Design Interior, SPC is usually what we recommend when a client tells us they're tired of replacing flooring every few years. It's built with a rigid stone-polymer core, which basically means it won't dent, swell, or warp even if water sits on it — so it works well in kitchens, offices, or anywhere that gets a lot of daily traffic. If you like the look of wood or marble but don't want the upkeep that comes with it, this is usually the middle ground we point clients toward.",
+      "At Steiner Design Interior, SPC is usually what we recommend when a client tells us they're tired of replacing flooring every few years. We supply and installs SPC flooring to clients in Rawalpindi, Islamabad, and other cities across Pakistan.It's built with a rigid stone-polymer core, which basically means it won't dent, swell, or warp even if water sits on it — so it works well in kitchens, offices, or anywhere that gets a lot of daily traffic. If you like the look of wood or marble but don't want the upkeep that comes with it, this is usually the middle ground we point clients toward.",
     image: spcImg,
     features: ["100% waterproof", "Rigid dent-resistant core", "Integrated underlay options", "Underfloor heating compatible"],
     variations: [ "5mm", "Stone & wood décors"],
@@ -312,7 +312,7 @@ export const products: Product[] = [
   name: "Carpet Tiles",
   category: "carpet-tiles",
   description:
-    "Modular carpet tiles built for offices and commercial spaces — if one tile gets stained or damaged, we lift and replace just that piece instead of redoing the whole floor. We stock both PP and Nylon ranges, each available in multiple series and patterns — browse the options below to find the one that fits your space.",
+    "We supply and install PP and Nylon carpet tiles in 50cm x 50cm and 10cm x 39cm formats, serving offices and commercial clients in Rawalpindi, Islamabad, and other locations across Pakistan. The core advantage for a business owner or office manager: if one tile stains or wears out, we lift and replace that single tile instead of shutting down a section of the office to redo the whole floor. PP tiles are the standard choice for regular office use; Nylon is what we'd recommend to a business with heavier daily foot traffic, like retail or hospitality, since the pile is denser and the backing more reinforced. Browse the series below to see the specific patterns and colours we currently carry.",
   image: carpetTilesImg,
   seriesGroup: "carpet-tiles",
   features: ["Anti-static backing", "Individually replaceable tiles", "PP and Nylon options", "Commercial-grade durability"],
@@ -509,7 +509,7 @@ export const products: Product[] = [
     name: "Wall Mouldings",
     category: "wall-mouldings",
     description:
-      "These are the small details that usually end up making the biggest difference to how finished a room feels — cornices where the wall meets the ceiling, skirting along the floor, and panel trims that break up a plain wall into something more architectural. Steiner Design Interior fits these using PS, PU, or MDF profiles depending on the room and budget, and everything's mitre-cut on site so corners line up properly instead of looking like an afterthought. We do this a lot as a finishing step on rooms we've already floored or panelled, but it works just as well as a standalone upgrade to an existing space.",
+      "We fit cornices, skirting boards, and panel trims using PS, PU, or MDF profiles, with installation available across Rawalpindi, Islamabad, and other locations in Pakistan. Every profile is mitre-cut on site, so internal and external corners line up cleanly rather than showing visible seams — a detail that matters most to architects and designers specifying finish-level work, and to homeowners who've noticed a room look 'unfinished' without it. This is commonly the final step after we've installed flooring or wall panels for a client, though it works equally well as a standalone upgrade to a room that's otherwise complete.",
     image: mouldingImg,
     images: wallmouldingGallery,
     features: [ "Moisture resistant options", "Mitre-cut on site", "Custom layouts"],
@@ -520,7 +520,7 @@ export const products: Product[] = [
     name: "Woolen Carpet",
     category: "woolen-carpet",
     description:
-      "This is our option for clients who want an actual soft, warm floor underfoot — not vinyl or SPC pretending to be soft, real wool wall-to-wall carpeting. It's noticeably better at dampening sound than hard flooring, which matters more than people expect in bedrooms and quiet living spaces above another floor. We offer it plain or patterned, and can also do custom rug sizing if you want it as a defined area rather than covering the whole room.",
+      "Steiner Design Interior supplies pure wool wall-to-wall carpeting to homes and businesses in Rawalpindi, Islamabad, and other cities across Pakistan. Unlike vinyl or SPC flooring, this is a genuinely soft, insulating floor — it measurably dampens sound transfer compared to hard flooring, which matters most to homeowners carpeting a bedroom or living space above another floor. Available in plain or patterned weaves, and we can size it as a custom rug rather than full wall-to-wall coverage if a client wants a defined area instead of complete room coverage.",
     image: carpetImg,
     features: ["Natural wool blend", "Acoustic insulation", "Stain-treated options", "Wall-to-wall installation"],
     variations: ["Plain", "Patterned", "Custom rug sizes"],
@@ -541,7 +541,7 @@ export const products: Product[] = [
     name: "Media Walls",
     category: "media-walls",
     description:
-      "This is one of our more involved builds — we design it around your actual TV size, seating layout, and the room's proportions first, then bring in materials like fluted wood, stone, or marble inserts to give it real depth rather than a flat panel with a TV mounted on it. Cable management is built in from the start, so there's nothing hanging or visible once it's finished, and we can integrate LED lighting into the design if that's the look you're after. We usually show clients a 3D preview before we start building, so there are no surprises once installation begins.",
+      "Steiner Design Interior designs and builds custom media walls for homeowners and businesses in Rawalpindi, Islamabad, and other cities across Pakistan. We start with your actual TV size, seating distance, and room proportions, then build with fluted wood, stone, or marble inserts so the finished wall has real physical depth rather than a flat panel with a TV bolted on. Cable management is routed inside the structure from the start, and we can integrate LED lighting into the design where that's the desired effect. For architects or interior designers working on a client's behalf, we provide a 3D preview before fabrication begins, so specifications can be confirmed before any material is cut.",
     image: mediaWallImg,
     features: ["Custom design & 3D preview", "Concealed cable routing", "Integrated LED lighting", "Complete installation"],
     variations: ["Wood & marble", "Fluted panel", "Full-wall unit","custom designs"],
