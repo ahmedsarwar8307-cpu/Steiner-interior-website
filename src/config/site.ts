@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "STEINER Design Interior",
   tagline: "The New Way of Life",
   shortDescription:
-    "A premium interior products studio specialising in flooring, wall solutions, window transformations and complete interior transformations.",
+    "A premium interior products studio based in Rawalpindi & Islamabad,specialising in flooring, wall solutions, window transformations and complete interior transformations.",
 
   /** WhatsApp number in international format, digits only (no +, spaces or dashes). */
   whatsappNumber: "923114978508",
@@ -24,7 +24,7 @@ export const siteConfig = {
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/steinerdesigninterior?igsh=MW9sa2Q2bm5ycmFydQ==" },
     { label: "Facebook", href: "https://www.facebook.com/share/1CCSF2ZuJd/" },
-    { label: "TikTok", href: "https://www.tiktok.com/@ahsan_steiner?_r=1&_t=ZS-98qibDfLZnY" },
+    { label: "TikTok", href: "https://www.tiktok.com/@steiner.interior?is_from_webapp=1&sender_device=pc" },
     
   ],
 
