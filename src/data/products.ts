@@ -240,7 +240,7 @@ export const products: Product[] = [
     variations: ["8mm", "12mm",],
       featured: true,
   },
-  {
+ /* {
     id: "local-vinyl-flooring",
     name: "Local Made Vinyl Flooring",
     category: "vinyl-flooring",
@@ -261,7 +261,18 @@ export const products: Product[] = [
     image: importedvinylImg,
     features: ["Thick wear layer", "Realistic wood & stone texture", "Dimensionally stable", "Commercial grade"],
     variations: ["1.3mm", "5mm", "Matt & semi-gloss finishes"],
-  },
+  },*/
+  {
+  id: "vinyl-flooring",
+  name: "Vinyl Flooring",
+  category: "vinyl-flooring",
+  description:
+    "We stock two grades of vinyl, depending on what a client needs. Our locally made range is the budget-friendly option — water resistant, quick to install, and readily in stock, good for a straightforward room refresh. Our imported range costs more but has a noticeably thicker wear layer and more convincing wood and stone textures, so we'd recommend it for offices or homes where you want vinyl's practicality without it looking obviously like vinyl.",
+  image: localvinylImg,
+  images: [localvinylImg, importedvinylImg],
+  features: ["Water resistant", "Fast installation", "Local and imported grades", "Wood & stone textures"],
+  variations: ["Local Made — Sheet roll & plank, 1.3mm", "Imported — 1.3mm & 5mm, thicker wear layer"],
+},
   {
     id: "spc-flooring",
     name: "SPC Flooring",
