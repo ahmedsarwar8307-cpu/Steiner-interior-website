@@ -5,6 +5,8 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { getCarpetSeries } from "@/data/carpetSeries";
 import { waMessages } from "@/lib/whatsapp";
 import { siteConfig } from "@/config/site";
+import { ProductImageCarousel } from "@/components/ProductImageCarousel";
+import { ProductPdfs } from "@/components/ProductPdfs";
 
 export const Route = createFileRoute("/carpet-tiles/$seriesSlug")({
   loader: ({ params }) => {
@@ -38,11 +40,7 @@ function CarpetSeriesDetail() {
           </Link>
 
           <div className="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-16">
-            <img
-              src={series.image}
-              alt={series.name}
-              className="w-full rounded-sm object-cover shadow-lift"
-            />
+           <ProductImageCarousel images={series.images} fallback={series.image} alt={series.name} /> 
             <div>
               <p className="eyebrow">{series.material} Range</p>
               <h2 className="mt-4 text-4xl">{series.name}</h2>
@@ -64,6 +62,7 @@ function CarpetSeriesDetail() {
               </div>
             </div>
           </div>
+ {series.pdfs?.length ? <ProductPdfs pdfs={series.pdfs} /> : null}
         </div>
       </section>
     </>
