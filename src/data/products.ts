@@ -317,6 +317,7 @@ export const products: Product[] = [
   seriesGroup: "carpet-tiles",
   features: ["Anti-static backing", "Individually replaceable tiles", "PP and Nylon options", "Commercial-grade durability"],
   variations: ["50cm x 50cm", "10cm x 39cm"],
+  featured : true,
 },
   {
     id: "pvc-panel",
