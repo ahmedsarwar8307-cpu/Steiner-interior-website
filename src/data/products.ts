@@ -363,7 +363,7 @@ export const products: Product[] = [
     description:
       "This is our widest wallpaper range by far, covering everything from classic florals to more contemporary prints, so it's usually where we start when a client isn't sure yet what direction they want. It's a washable surface, which matters more than people expect — hallways and dining rooms get marked up over time, and being able to wipe it down keeps it looking new for longer. Available as non-woven, vinyl-coated, or 3D embossed depending on the texture you're after..",
     image: chinesewallpaperImg,
-    features: ["Extensive design library", "Washable surface", "Roll-based pricing", "Fast availability"],
+    features: ["Extensive design library", "Soft surface", "Roll-based pricing", "Fast availability"],
     variations: ["Non-woven", "Vinyl coated", "3D embossed"],
   },
   {
