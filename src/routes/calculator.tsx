@@ -16,21 +16,24 @@ export const Route = createFileRoute("/calculator")({
         ? search["tab"]
         : "flooring",
   }),
-  head: () => ({
-    meta: [
-      { title: `Area Calculator — Estimate Your Materials | ${siteConfig.name}` },
-      {
-        name: "description",
-        content:
-          "Estimate how much flooring, wall panels, wallpaper or window blinds you need before you order.",
-      },
-      { property: "og:title", content: `Area Calculator | ${siteConfig.name}` },
-      {
-        property: "og:description",
-        content: "Quick estimates for flooring, wall panels, wallpaper and window blinds.",
-      },
-    ],
-  }),
+ head: () => ({
+  meta: [
+    { title: `Area Calculator — Estimate Your Materials | ${siteConfig.name}` },
+    {
+      name: "description",
+      content:
+        "Estimate how much flooring, wall panels, wallpaper or window blinds you need before you order.",
+    },
+    { property: "og:title", content: `Area Calculator | ${siteConfig.name}` },
+    {
+      property: "og:description",
+      content: "Quick estimates for flooring, wall panels, wallpaper and window blinds.",
+    },
+  ],
+  links: [
+    { rel: "canonical", href: "https://www.steinerinterior.com/calculator" },
+  ],
+}),
   component: CalculatorPage,
 });
 

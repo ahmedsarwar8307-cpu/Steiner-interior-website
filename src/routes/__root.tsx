@@ -99,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 { rel: "icon", href: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
 { rel: "apple-touch-icon", href: "/apple-touch-icon.png", sizes: "180x180" },
 { rel: "manifest", href: "/site.webmanifest" },
-{ rel: "canonical", href: "https://www.steinerinterior.com" },
+
     ],
     scripts: [
       {
