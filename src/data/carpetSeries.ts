@@ -57,7 +57,7 @@ export const carpetSeries: CarpetSeries[] = [
     // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
     description:
       "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
-    specs: ["Material: 100% PP fibre", "Tile size: 50cm x 50cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
+    specs: ["Material: 100% PP fibre", "Tile size: 25cm x 100cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
   },
 {
     slug: "mujito-series",
@@ -68,7 +68,7 @@ export const carpetSeries: CarpetSeries[] = [
     // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
     description:
       "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
-    specs: ["Material: 100% PP fibre", "Tile size: 50cm x 50cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
+    specs: ["Material: 100% PP fibre", "Tile size: 25cm x 100cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
   },
 
 ];
