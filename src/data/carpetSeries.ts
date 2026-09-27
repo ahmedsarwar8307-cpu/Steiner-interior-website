@@ -3,6 +3,11 @@ import seekingSeries1Img from "@/assets/carpet-tiles/seeking-series1.jpeg";
 const seekingGallery = Object.values(
   import.meta.glob("@/assets/carpet-tiles/seeking-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
+const huishanGallery = Object.values(
+  import.meta.glob("@/assets/carpet-tiles/huishan-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
+
+
 export type CarpetSeries = {
   slug: string;
   name: string;
@@ -26,6 +31,18 @@ export const carpetSeries: CarpetSeries[] = [
       "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
     specs: ["Material: 100% PP fibre", "Tile size: 25cm x 100cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
   },
+  {
+    slug: "huishan-series",
+    name: "Huishan Series",
+    material: "PP",
+    image: huishanGallery[1]!,
+    images: huishanGallery,
+    // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
+    description:
+      "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
+    specs: ["Material: 100% PP fibre", "Tile size: 50cm x 50cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
+  },
+
 ];
 
 export function getCarpetSeries(slug: string) {
