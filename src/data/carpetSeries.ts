@@ -63,7 +63,7 @@ export const carpetSeries: CarpetSeries[] = [
     slug: "mujito-series",
     name: "Mujito Series",
     material: "PP",
-    image: mujitoGallery[5]!,
+    image: mujitoGallery[1]!,
     images: mujitoGallery,
     // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
     description:
