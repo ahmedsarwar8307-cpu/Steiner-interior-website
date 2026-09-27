@@ -49,7 +49,7 @@ function CalculatorPage() {
       />
       <section className="py-16 md:py-24">
         <div className="container-lux">
-          <AreaCalculator defaultTab={search.tab} />
+         <AreaCalculator defaultTab={search.tab ?? "flooring"} /> 
         </div>
       </section>
     </>
