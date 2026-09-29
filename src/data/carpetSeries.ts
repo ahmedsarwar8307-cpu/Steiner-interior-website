@@ -16,6 +16,13 @@ const mujitoGallery = Object.values(
 const fp10Gallery = Object.values(
   import.meta.glob("@/assets/carpet-tiles/fp10-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
+const wqnGallery = Object.values(
+  import.meta.glob("@/assets/carpet-tiles/wqn-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
+
+const leapGallery = Object.values(
+  import.meta.glob("@/assets/carpet-tiles/leap-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
 
 
 export type CarpetSeries = {
@@ -82,6 +89,30 @@ export const carpetSeries: CarpetSeries[] = [
     material: "PP",
     image: fp10Gallery[0]!,
     images: fp10Gallery,
+    // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
+    description:
+      "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
+    specs: ["Material: 100% PP fibre", "Tile size: 25cm x 100cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
+  },
+
+{
+    slug: "wqn-series",
+    name: "WQN Series",
+    material: "PP",
+    image: wqnGallery[1]!,
+    images: wqnGallery,
+    // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
+    description:
+      "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
+    specs: ["Material: 100% PP fibre", "Tile size: 25cm x 100cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
+  },
+
+  {
+    slug: "leap-series",
+    name: "LEAP Series",
+    material: "PP",
+    image: leapGallery[0]!,
+    images: leapGallery,
     // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
     description:
       "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
