@@ -29,7 +29,7 @@ const pegasusGallery = Object.values(
 ) as string[];
 
 const hillviewGallery = Object.values(
-  import.meta.glob("@/assets/carpet-tiles/hilview-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+  import.meta.glob("@/assets/carpet-tiles/HillView-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
 
 
