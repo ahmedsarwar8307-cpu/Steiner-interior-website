@@ -47,7 +47,7 @@ export type CarpetSeries = {
 export const carpetSeries: CarpetSeries[] = [
   {
     slug: "seeking-series",
-    name: "Seeking Series",
+    name: "SEEKING Series",
     material: "PP",
     image: seekingGallery[0]!,
     images: seekingGallery,
@@ -58,7 +58,7 @@ export const carpetSeries: CarpetSeries[] = [
   },
   {
     slug: "huishan-series",
-    name: "Huishan Series",
+    name: "HUISHAN Series",
     material: "PP",
     image: huishanGallery[1]!,
     images: huishanGallery,
@@ -81,7 +81,7 @@ export const carpetSeries: CarpetSeries[] = [
   },
 {
     slug: "mujito-series",
-    name: "Mujito Series",
+    name: "MOJITO Series",
     material: "PP",
     image: mujitoGallery[1]!,
     images: mujitoGallery,
