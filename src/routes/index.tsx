@@ -136,7 +136,7 @@ function Home() {
                     <h3 className="font-display text-2xl text-ivory">{c.name}</h3>
                     <p className="mt-1.5 line-clamp-2 text-sm text-ivory/90">{c.blurb}</p>
                     {c.subcategories.length ? (
-                      <p className="mt-3 text-[0.75rem] uppercase tracking-[0.15em] text-gold">
+                      <p className="mt-3 text-[0.75rem] uppercase tracking-[0.13em] text-gold">
                         {c.subcategories.length} sub-categories
                       </p>
                     ) : null}
