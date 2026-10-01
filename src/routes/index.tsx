@@ -59,7 +59,8 @@ function Home() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="eyebrow"
+             className="eyebrow text-sm tracking-[0.2em]" 
+            //className="eyebrow"
           >
             {siteConfig.tagline}
           </motion.p>
