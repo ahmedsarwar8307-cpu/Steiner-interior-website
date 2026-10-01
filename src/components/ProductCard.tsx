@@ -30,7 +30,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
           height={900}
           className="size-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
         />
-        <span className="absolute left-3 top-3 rounded-sm bg-background/85 px-2.5 py-1 text-[0.6rem] uppercase tracking-[0.18em] text-foreground backdrop-blur">
+       <span className="absolute left-3 top-3 rounded-sm bg-background/90 px-2.5 py-1.5 text-[0.75rem] uppercase tracking-[0.12em] text-foreground backdrop-blur">
           {categoryName(product.category)}
         </span>
       </Link>
@@ -38,7 +38,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
       <div className="flex flex-1 flex-col p-6">
         <h3 className="font-display text-2xl leading-tight text-foreground">{product.name}</h3>
         {sub ? (
-          <p className="mt-1 text-[0.65rem] uppercase tracking-[0.2em] text-gold">{sub}</p>
+          <p className="mt-1 text-[0.8rem] uppercase tracking-[0.12em] text-gold">{sub}</p>
         ) : null}
         <p className="mt-3 line-clamp-3 flex-1 text-sm leading-relaxed text-muted-foreground">
           {product.description}

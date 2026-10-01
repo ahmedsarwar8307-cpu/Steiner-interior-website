@@ -26,9 +26,9 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
         />
         <div className="card-veil absolute inset-0 opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="absolute inset-x-0 bottom-0 p-6">
-          <p className="text-[0.6rem] uppercase tracking-[0.24em] text-gold">{project.type}</p>
+          <p className="text-[0.78rem] uppercase tracking-[0.14em] text-gold">{project.type}</p>
           <h3 className="mt-2 font-display text-2xl text-ivory">{project.title}</h3>
-          <p className="mt-1 flex items-center gap-1.5 text-xs text-ivory/70">
+          <p className="mt-1 flex items-center gap-1.5 text-sm text-ivory/90">
             <MapPin className="size-3.5" /> {project.location}
           </p>
           <p className="mt-3 line-clamp-2 max-w-md text-sm text-ivory/70">{project.description}</p>
