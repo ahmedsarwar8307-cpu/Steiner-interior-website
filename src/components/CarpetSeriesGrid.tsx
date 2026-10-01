@@ -23,7 +23,7 @@ export function CarpetSeriesGrid() {
               className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="p-3">
-              <p className="text-[0.6rem] uppercase tracking-[0.16em] text-gold">{s.material}</p>
+              <p className="text-[0.75rem] uppercase tracking-[0.14em] text-gold">{s.material}</p>
               <p className="mt-1 text-sm text-foreground">{s.name}</p>
             </div>
           </Link>
