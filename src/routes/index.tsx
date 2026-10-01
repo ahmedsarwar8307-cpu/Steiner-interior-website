@@ -134,7 +134,7 @@ function Home() {
                   <div className="card-veil absolute inset-0" />
                   <div className="absolute inset-x-0 bottom-0 p-6">
                     <h3 className="font-display text-2xl text-ivory">{c.name}</h3>
-                    <p className="mt-1.5 line-clamp-2 text-sm text-ivory/70">{c.blurb}</p>
+                    <p className="mt-1.5 line-clamp-2 text-sm text-ivory/90">{c.blurb}</p>
                     {c.subcategories.length ? (
                       <p className="mt-3 text-[0.75rem] uppercase tracking-[0.15em] text-gold">
                         {c.subcategories.length} sub-categories
