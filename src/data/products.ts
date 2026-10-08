@@ -376,6 +376,7 @@ export const products: Product[] = [
     description:
       "Where our Chinese range is about variety, this range is about finish quality — Korean wallpaper mills are known for tighter print consistency and colours that don't fade or shift as fast under sunlight. It has a lower sheen than most wallpaper, which gives rooms a more refined, less printed look. Steiner Design Interior usually recommends this range specifically when a client cares more about how the wallpaper ages over the next few years than the upfront cost.",
     image: koreanwallpaperImg,
+    pdfs: [{ name: "NEOM", file: "/pdf/NEOM FINAL PDF.pdf" }],
     features: ["Premium texture", "Colour-fast pigments", "Low sheen finishes", "Durable surface"],
     variations: ["Plain textures", "Micro patterns", "Silk effect"],
   },
