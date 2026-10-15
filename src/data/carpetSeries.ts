@@ -53,8 +53,8 @@ export const carpetSeries: CarpetSeries[] = [
     images: seekingGallery,
     // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
     description:
-      "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
-    specs: ["Material: 100% PP fibre", "Tile size: 25cm x 100cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
+      "Transform your interiors with the Seeking Series carpet planks from Steiner Design Interior. Featuring an elegant multi-level loop construction and dynamic color gradients, these 33.3cm x 100cm planks offer versatile installation options like Herringbone and Ashlar to create unique layouts. Manufactured with 100% Solution Dyed yarn for exceptional color retention, they provide a durable and stylish flooring solution for commercial spaces. Whether outfitting a modern office in Islamabad, a retail space in Rawalpindi, or undertaking a commercial project anywhere in Pakistan, the Seeking Series ensures lasting performance and life-of-the-carpet static protection.",
+specs : [ "Style Name: Seeking, Construction: Multi-level loop, Yarn: 100% Unicolor, Color System: 100% Solution Dyed, Gauge: 1/12, Stitches: 9 per inch, Pile Weight: 19 oz/yd², Pile Height: 2.5mm-5.0mm(±0.5mm), Backing: PVC with fiberglass, Tile Size: 33.3cmx100cm, Static Control: Life-of-the Carpet Static Protection, Installation Methods: Herringbone, Ashlar, Monolithic, Brick "],
   },
   {
     slug: "huishan-series",
@@ -64,8 +64,8 @@ export const carpetSeries: CarpetSeries[] = [
     images: huishanGallery,
     // pdfs: [{ name: "Spec Sheet", file: "/pdfs/seeking-series-spec.pdf" }],
     description:
-      "This is one of our PP carpet tile options — built with the same practical backbone as the rest of our PP range: anti-static backing, stain resistance, and the ability to lift and replace a single damaged tile without redoing the whole floor. Steiner Design Interior usually fits this series in offices and commercial spaces where day-to-day durability matters more than plush comfort.",
-    specs: ["Material: 100% PP fibre", "Tile size: 50cm x 50cm", "Backing: PVC", "Install: Loose-lay or glue-down"],
+      "Elevate your commercial workspace with the modern, linear design of the HUISHAN Series carpet tiles, brought to you by Steiner Design Interior. Featuring a sophisticated striated pattern available in versatile professional shades, these tiles offer a sleek and contemporary aesthetic. Crafted for durability in high-traffic environments, these tiles are an ideal office flooring solution. Whether you are upgrading a corporate office in Rawalpindi, a commercial hub in Islamabad, or seeking premium flooring services anywhere in Pakistan, the HuiShan Series delivers the perfect combination of resilience, style, and easy maintenance",
+    specs: ["Style Name: HUISHAN, Pile Height: 4mm, Face Yarn: 100% PP, Gauge: 1/12, Pile Weight: 500g/sqm, Backing: PVC with fiberglass, Tile Size: 50x50cm"],
   },
 
   {
