@@ -1,5 +1,6 @@
 import seekingSeriesImg from "@/assets/carpet-tiles/seeking-series.jpeg";
 import seekingSeries1Img from "@/assets/carpet-tiles/seeking-series1.jpeg";
+import { Construction } from "lucide-react";
 const seekingGallery = Object.values(
   import.meta.glob("@/assets/carpet-tiles/seeking-series/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
