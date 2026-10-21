@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowRight, Star} from "lucide-react";
-import heroImg from "@/assets/hero-interior.jpg";
+import heroImg from "@/assets/hero-interior.jpeg";
 import aboutImg from "@/assets/about-studio.jpg";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/SectionHeading";
