@@ -119,35 +119,45 @@ function Home() {
           </div>
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((c, i) => (
-              <Reveal key={c.slug} delay={Math.min(i, 6) * 0.05}>
-                <Link
-                  to="/products"
-                  search={{ category: c.slug, sub: "all", q: "" }}
-                  className="group relative block aspect-[5/4] overflow-hidden rounded-sm"
-                >
-                  <img
-                    src={c.image}
-                    alt={c.name}
-                    loading="lazy"
-                    className="size-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
-                  />
-                  <div className="card-veil absolute inset-0" />
-                  <div className="absolute inset-x-0 bottom-0 p-6">
-                    <h3 className="font-display text-2xl text-ivory">{c.name}</h3>
-                    <p className="mt-1.5 line-clamp-2 text-sm text-ivory/90">{c.blurb}</p>
-                    {c.subcategories.length ? (
-                      <p className="mt-3 text-[0.75rem] uppercase tracking-[0.13em] text-gold">
-                        {c.subcategories.length} sub-categories
-                      </p>
-                    ) : null}
-                  </div>
-                </Link>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+          {categories.map((c, i) => {
+  const inCategory = products.filter((p) => p.category === c.slug);
+  const single = inCategory.length === 1 ? inCategory[0] : undefined;
+  const cardClass = "group relative block aspect-[5/4] overflow-hidden rounded-sm";
+  const inner = (
+    <>
+      <img
+        src={c.image}
+        alt={c.name}
+        loading="lazy"
+        className="size-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
+      />
+      <div className="card-veil absolute inset-0" />
+      <div className="absolute inset-x-0 bottom-0 p-6">
+        <h3 className="font-display text-2xl text-ivory">{c.name}</h3>
+        <p className="mt-1.5 line-clamp-2 text-sm text-ivory/90">{c.blurb}</p>
+        {!single && c.subcategories.length ? (
+          <p className="mt-3 text-[0.75rem] uppercase tracking-[0.15em] text-gold">
+            {c.subcategories.length} sub-categories
+          </p>
+        ) : null}
+      </div>
+    </>
+  );
+
+  return (
+    <Reveal key={c.slug} delay={Math.min(i, 6) * 0.05}>
+      {single ? (
+        <Link to="/products/$productId" params={{ productId: single.id }} className={cardClass}>
+          {inner}
+        </Link>
+      ) : (
+        <Link to="/products" search={{ category: c.slug, sub: "all", q: "" }} className={cardClass}>
+          {inner}
+        </Link>
+      )}
+    </Reveal>
+  );
+})}
 
 {/* FEATURED PRODUCTS */}
 <section className="border-y border-border bg-secondary/50 py-24 md:py-32">

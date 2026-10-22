@@ -26,6 +26,9 @@ import grass40mmImg from "@/assets/grass-40mm.jpeg";
 import grass50mmImg from "@/assets/grass-50mm.jpeg";
 import sportsImg from "@/assets/cat-sports-flooring.jpg";
 import mouldingImg from "@/assets/cat-wall-mouldings.jpg";
+const mediawallGallery = Object.values(
+  import.meta.glob("@/assets/media-wall/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
 const wallmouldingGallery = Object.values(
   import.meta.glob("@/assets/wall-moulding/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
@@ -363,7 +366,7 @@ export const products: Product[] = [
     description:
       "This is our widest wallpaper range by far, covering everything from classic florals to more contemporary prints, so it's usually where we start when a client isn't sure yet what direction they want. It's a washable surface, which matters more than people expect — hallways and dining rooms get marked up over time, and being able to wipe it down keeps it looking new for longer. Available as non-woven, vinyl-coated, or 3D embossed depending on the texture you're after..",
     image: chinesewallpaperImg,
-    pdfs: [{ name: "RAINBOW 8", file: "/pdf/RAINBOW 8 FINAL PDF.pdf" }, { name: "RAINBOW 10", file: "/pdf/RAINBOW 10 FINAL PDF.pdf" },   { name: "MYTH", file: "/pdf/Myth PDF.pdf" }                    ], 
+    pdfs: [{ name: "RAINBOW 8", file: "/pdf/RAINBOW 8 FINAL PDF.pdf" }, { name: "RAINBOW 10", file: "/pdf/RAINBOW 10 FINAL PDF.pdf" },   { name: "MYTH", file: "/pdf/Myth PDF.pdf" } ,   { name: "TOBBLER", file: "/pdf/TOBBLER.pdf" }                   ], 
 
     features: ["Extensive design library", "Soft surface", "Roll-based pricing", "Fast availability"],
     variations: ["Non-woven", "Vinyl coated", "3D embossed"],
@@ -546,7 +549,8 @@ export const products: Product[] = [
     category: "media-walls",
     description:
       "Steiner Design Interior designs and builds custom media walls for homeowners and businesses in Rawalpindi, Islamabad, and other cities across Pakistan. We start with your actual TV size, seating distance, and room proportions, then build with fluted wood, stone, or marble inserts so the finished wall has real physical depth rather than a flat panel with a TV bolted on. Cable management is routed inside the structure from the start, and we can integrate LED lighting into the design where that's the desired effect. For architects or interior designers working on a client's behalf, we provide a 3D preview before fabrication begins, so specifications can be confirmed before any material is cut.",
-    image: mediaWallImg,
+    image: mediawallGallery[3]!,
+     images: mediawallGallery,  
     features: ["Custom design & 3D preview", "Concealed cable routing", "Integrated LED lighting", "Complete installation"],
     variations: ["Wood & marble", "Fluted panel", "Full-wall unit","custom designs"],
   },
