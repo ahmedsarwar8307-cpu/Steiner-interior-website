@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { ArrowRight, Star} from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import heroImg from "@/assets/hero-interior.jpeg";
 import aboutImg from "@/assets/about-studio.jpg";
 import { Button } from "@/components/ui/button";
@@ -15,29 +15,28 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { VideoSection } from "@/components/VideoSection";
 import { siteConfig } from "@/config/site";
 import { waMessages } from "@/lib/whatsapp";
-import { categories } from "@/data/products";
 import { projects } from "@/data/projects";
 import { services, whyChooseUs } from "@/data/content";
 import { ProductCard } from "@/components/ProductCard";
 import { getFeaturedProducts } from "@/data/products";
-//import { AreaCalculator } from "@/components/AreaCalculator";
+import { categories, products } from "@/data/products";
 
 export const Route = createFileRoute("/")({
- head: () => ({
-  meta: [
-    { title: `${siteConfig.name} | Flooring & Interior Solutions in Pakistan` },
-    {
-      name: "description",
-      content:
-        "Trusted interior products studio in Rawalpindi & Islamabad, serving clients across Pakistan. Flooring, wall panels, wallpaper, blinds & curtains — supplied and installed with 5.0★ rated service.",
-    },
-    { property: "og:title", content: `${siteConfig.name} | Flooring & Interior Solutions in Pakistan` },
-    {
-      property: "og:description",
-      content: "Trusted interior products studio in Rawalpindi & Islamabad, serving clients across Pakistan.",
-    },
-  ],
-}),
+  head: () => ({
+    meta: [
+      { title: `${siteConfig.name} | Flooring & Interior Solutions in Pakistan` },
+      {
+        name: "description",
+        content:
+          "Trusted interior products studio in Rawalpindi & Islamabad, serving clients across Pakistan. Flooring, wall panels, wallpaper, blinds & curtains — supplied and installed with 5.0★ rated service.",
+      },
+      { property: "og:title", content: `${siteConfig.name} | Flooring & Interior Solutions in Pakistan` },
+      {
+        property: "og:description",
+        content: "Trusted interior products studio in Rawalpindi & Islamabad, serving clients across Pakistan.",
+      },
+    ],
+  }),
   component: Home,
 });
 
@@ -59,8 +58,7 @@ function Home() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-             className="eyebrow text-sm tracking-[0.2em]" 
-            //className="eyebrow"
+            className="eyebrow text-sm tracking-[0.2em]"
           >
             {siteConfig.tagline}
           </motion.p>
@@ -72,16 +70,16 @@ function Home() {
           >
             Transforming Spaces Into Timeless Designs
           </motion.h1>
-      <motion.p
-  initial={{ opacity: 0, y: 22 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.9, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
-  className="mt-7 max-w-xl text-[1.02rem] leading-relaxed text-ivory/80"
->
-  We help homes and businesses across Pakistan — with a base in Rawalpindi and Islamabad —
-  choose the right flooring, wall panels, wallpaper, blinds and curtains for their space,
-  then install it all ourselves, so you're never left managing three different contractors.
-</motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 22 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-7 max-w-xl text-[1.02rem] leading-relaxed text-ivory/80"
+          >
+            We help homes and businesses across Pakistan — with a base in Rawalpindi and Islamabad —
+            choose the right flooring, wall panels, wallpaper, blinds and curtains for their space,
+            then install it all ourselves, so you're never left managing three different contractors.
+          </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
@@ -94,7 +92,7 @@ function Home() {
             <Button asChild variant="onImage" size="lg">
               <Link to="/projects">View Our Projects</Link>
             </Button>
-                       <Button asChild variant="onImage" size="lg">
+            <Button asChild variant="onImage" size="lg">
               <Link to="/calculator">Estimate Your Area</Link>
             </Button>
             <WhatsAppButton message={waMessages.general} size="lg" label="WhatsApp Us" />
@@ -102,7 +100,7 @@ function Home() {
         </div>
       </section>
 
- {/* PRODUCT CATEGORIES */}
+      {/* PRODUCT CATEGORIES */}
       <section className="py-24 md:py-32">
         <div className="container-lux">
           <div className="flex flex-wrap items-end justify-between gap-6">
@@ -119,62 +117,65 @@ function Home() {
           </div>
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((c, i) => {
-  const inCategory = products.filter((p) => p.category === c.slug);
-  const single = inCategory.length === 1 ? inCategory[0] : undefined;
-  const cardClass = "group relative block aspect-[5/4] overflow-hidden rounded-sm";
-  const inner = (
-    <>
-      <img
-        src={c.image}
-        alt={c.name}
-        loading="lazy"
-        className="size-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
-      />
-      <div className="card-veil absolute inset-0" />
-      <div className="absolute inset-x-0 bottom-0 p-6">
-        <h3 className="font-display text-2xl text-ivory">{c.name}</h3>
-        <p className="mt-1.5 line-clamp-2 text-sm text-ivory/90">{c.blurb}</p>
-        {!single && c.subcategories.length ? (
-          <p className="mt-3 text-[0.75rem] uppercase tracking-[0.15em] text-gold">
-            {c.subcategories.length} sub-categories
-          </p>
-        ) : null}
-      </div>
-    </>
-  );
+            {categories.map((c, i) => {
+              const inCategory = products.filter((p) => p.category === c.slug);
+              const single = inCategory.length === 1 ? inCategory[0] : undefined;
+              const cardClass = "group relative block aspect-[5/4] overflow-hidden rounded-sm";
+              const inner = (
+                <>
+                  <img
+                    src={c.image}
+                    alt={c.name}
+                    loading="lazy"
+                    className="size-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06]"
+                  />
+                  <div className="card-veil absolute inset-0" />
+                  <div className="absolute inset-x-0 bottom-0 p-6">
+                    <h3 className="font-display text-2xl text-ivory">{c.name}</h3>
+                    <p className="mt-1.5 line-clamp-2 text-sm text-ivory/90">{c.blurb}</p>
+                    {!single && c.subcategories.length ? (
+                      <p className="mt-3 text-[0.75rem] uppercase tracking-[0.15em] text-gold">
+                        {c.subcategories.length} sub-categories
+                      </p>
+                    ) : null}
+                  </div>
+                </>
+              );
 
-  return (
-    <Reveal key={c.slug} delay={Math.min(i, 6) * 0.05}>
-      {single ? (
-        <Link to="/products/$productId" params={{ productId: single.id }} className={cardClass}>
-          {inner}
-        </Link>
-      ) : (
-        <Link to="/products" search={{ category: c.slug, sub: "all", q: "" }} className={cardClass}>
-          {inner}
-        </Link>
-      )}
-    </Reveal>
-  );
-})}
+              return (
+                <Reveal key={c.slug} delay={Math.min(i, 6) * 0.05}>
+                  {single ? (
+                    <Link to="/products/$productId" params={{ productId: single.id }} className={cardClass}>
+                      {inner}
+                    </Link>
+                  ) : (
+                    <Link to="/products" search={{ category: c.slug, sub: "all", q: "" }} className={cardClass}>
+                      {inner}
+                    </Link>
+                  )}
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-{/* FEATURED PRODUCTS */}
-<section className="border-y border-border bg-secondary/50 py-24 md:py-32">
-  <div className="container-lux">
-    <SectionHeading
-      eyebrow="Featured"
-      title="Best sellers from our catalogue"
-      description="A few standout picks our clients choose again and again."
-      align="center"
-    />
-    <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {getFeaturedProducts().map((p, i) => (
-        <ProductCard key={p.id} product={p} index={i} />
-      ))}
-    </div>
-  </div>
-</section>
+      {/* FEATURED PRODUCTS */}
+      <section className="border-y border-border bg-secondary/50 py-24 md:py-32">
+        <div className="container-lux">
+          <SectionHeading
+            eyebrow="Featured"
+            title="Best sellers from our catalogue"
+            description="A few standout picks our clients choose again and again."
+            align="center"
+          />
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {getFeaturedProducts().map((p, i) => (
+              <ProductCard key={p.id} product={p} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ABOUT */}
       <section className="py-24 md:py-32">
@@ -197,20 +198,10 @@ function Home() {
             />
             <Reveal delay={0.1} className="mt-8 space-y-5 text-[0.95rem] leading-relaxed text-muted-foreground">
               <p>
+                Steiner Design Interior is a Rawalpindi-based interior products studio serving homeowners, architects, and businesses across Rawalpindi, Islamabad, and the wider Pakistan market. We specify and install flooring, wall panels, wallpaper, window blinds, curtains, and bespoke media walls — and we handle it all ourselves, from first measurement through to final installation.
+              </p>
               <p>
-  Steiner Design Interior is a Rawalpindi-based interior products studio serving
-  homeowners, architects, and businesses across Rawalpindi, Islamabad, and the wider
-  Pakistan market. We specify and install flooring, wall panels, wallpaper, window
-  blinds, curtains, and bespoke media walls — and we handle it all ourselves, from
-  first measurement through to final installation.
-</p>
-<p>
-  Most of our clients come to us because they don't want to manage three different
-  contractors for one room — a flooring guy, a curtain guy, a panel installer.
-  We measure, supply, and fit everything in-house, which is also why our{" "}
-  <span className="text-foreground">5.0-star rating from 44+ Google reviews</span>{" "}
-  tends to mention how smooth the process was, not just the finished result.
-</p>
+                Most of our clients come to us because they don't want to manage three different contractors for one room — a flooring guy, a curtain guy, a panel installer. We measure, supply, and fit everything in-house, which is also why our <span className="text-foreground">5.0-star rating from 44+ Google reviews</span> tends to mention how smooth the process was, not just the finished result.
               </p>
             </Reveal>
             <Reveal delay={0.16} className="mt-10">
@@ -255,7 +246,6 @@ function Home() {
         </div>
       </section>
 
-     
       {/* PROJECTS */}
       <section className="bg-charcoal py-24 md:py-32">
         <div className="container-lux">
@@ -278,7 +268,6 @@ function Home() {
         </div>
       </section>
 
- 
       {/* VIDEOS */}
       <VideoSection />
 
@@ -304,24 +293,24 @@ function Home() {
         </div>
       </section>
 
-{/* TESTIMONIALS */}
-<section className="py-24 md:py-32">
-  <div className="container-lux">
-    <SectionHeading eyebrow="Testimonials" title="What our clients say" align="center" />
-    <div className="mt-16">
-      <TestimonialCarousel />
-    </div>
-    <div className="mt-10 flex justify-center">
-      <a href="https://www.google.com/maps/place/?q=place_id:ChIJae4upd-V3zgRzEP9CWotwnA" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-5 py-2.5 text-sm text-foreground transition-colors hover:bg-secondary/70">
-        <span className="flex gap-0.5 text-gold">
-          {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-4 fill-gold" />)}
-        </span>
-        <span className="font-medium">5.0</span>
-        <span className="text-muted-foreground">(43 Google Reviews)</span>
-      </a>
-    </div>
-  </div>
-</section>
+      {/* TESTIMONIALS */}
+      <section className="py-24 md:py-32">
+        <div className="container-lux">
+          <SectionHeading eyebrow="Testimonials" title="What our clients say" align="center" />
+          <div className="mt-16">
+            <TestimonialCarousel />
+          </div>
+          <div className="mt-10 flex justify-center">
+            <a href="https://www.google.com/maps/place/?q=place_id:ChIJae4upd-V3zgRzEP9CWotwnA" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-5 py-2.5 text-sm text-foreground transition-colors hover:bg-secondary/70">
+              <span className="flex gap-0.5 text-gold">
+                {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="size-4 fill-gold" />)}
+              </span>
+              <span className="font-medium">5.0</span>
+              <span className="text-muted-foreground">(43 Google Reviews)</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ + CTA */}
       <section className="border-t border-border py-24 md:py-32">
