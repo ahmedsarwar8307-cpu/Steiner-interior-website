@@ -3,21 +3,21 @@ import vinylImg from "@/assets/cat-vinyl-flooring.jpg";
 import localvinylImg from "@/assets/local-vinyl-flooring.jpeg";
 import importedvinylImg from "@/assets/imported-vinyle-flooring.jpeg";
 import spcImg from "@/assets/spc-flooring.jpeg";
-import panelsImg from "@/assets/cat-wall-panels.jpg";
+import panelsImg from "@/assets/optimized/cat-wall-panels.webp";
 import pvcpanelImg from "@/assets/pvc-panel.jpeg";
 import wpcpanelImg from "@/assets/wpc-panel.jpeg";
 const wpcpanelGallery = Object.values(
   import.meta.glob("@/assets/wpc-panel/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
-import wallpaperImg from "@/assets/cat-wallpapers.jpg";
+import wallpaperImg from "@/assets/optimized/cat-wallpapers.webp";
 import koreanwallpaperImg from "@/assets/korean-wallpaper.jpeg";
 import chinesewallpaperImg from "@/assets/chinese-wallpaper.jpeg";
-import blindsImg from "@/assets/cat-window-blinds.jpg";
+import blindsImg from "@/assets/optimized/cat-window-blinds.webp";
 import woodenblindsImg from "@/assets/wooden-blinds.jpeg";
 import zebrablindsImg from "@/assets/zebra-blinds.jpeg";
 import miniblindsImg from "@/assets/mini-blinds.jpeg";
 import verticalblindsImg from "@/assets/vertical-blind.jpeg";
-import grassImg from "@/assets/cat-artificial-grass.jpg";
+import grassImg from "@/assets/optimized/cat-artificial-grass.webp";
 import grass10mmImg from "@/assets/grass-10mm.jpeg";
 import grass15mmImg from "@/assets/grass-15mm.jpeg";
 import grass20mmImg from "@/assets/grass-20mm.jpeg";
@@ -33,7 +33,7 @@ const wallmouldingGallery = Object.values(
   import.meta.glob("@/assets/wall-moulding/*.{jpg,jpeg,png}", { eager: true, import: "default" })
 ) as string[];
 import carpetImg from "@/assets/cat-woolen-carpet.jpg";
-import carpetTilesImg from "@/assets/cat-carpet-tiles.jpeg";
+import carpetTilesImg from "@/assets/optimized/cat-carpet-tiles.webp";
 /*import ppcarpetTilesImg from "@/assets/pp-carpet-tile.jpeg";
 const ppCarpettilesGallery = Object.values(
   import.meta.glob("@/assets/pp-carpettile/*.{jpg,jpeg,png}", { eager: true, import: "default" })
