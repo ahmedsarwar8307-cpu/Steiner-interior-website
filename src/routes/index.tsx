@@ -43,6 +43,7 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
+
       {/* HERO */}
       <section className="relative flex min-h-[100svh] items-center overflow-hidden">
         <img
@@ -62,14 +63,11 @@ function Home() {
           >
             {siteConfig.tagline}
           </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 26 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 max-w-4xl text-5xl leading-[1.03] text-ivory md:text-7xl"
-          >
+
+          <h1 className="mt-6 max-w-4xl text-5xl leading-[1.03] text-ivory md:text-7xl">
             Transforming Spaces Into Timeless Designs
-          </motion.h1>
+          </h1>
+
           <motion.p
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
@@ -80,6 +78,7 @@ function Home() {
             choose the right flooring, wall panels, wallpaper, blinds and curtains for their space,
             then install it all ourselves, so you're never left managing three different contractors.
           </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
@@ -99,6 +98,7 @@ function Home() {
           </motion.div>
         </div>
       </section>
+
 
       {/* PRODUCT CATEGORIES */}
       <section className="py-24 md:py-32">
@@ -158,7 +158,7 @@ function Home() {
             })}
           </div>
         </div>
-      </section>
+      </section>  
 
       {/* FEATURED PRODUCTS */}
       <section className="border-y border-border bg-secondary/50 py-24 md:py-32">
