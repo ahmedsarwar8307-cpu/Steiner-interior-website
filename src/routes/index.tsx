@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { motion } from "motion/react";
 import { ArrowRight, Star } from "lucide-react";
 import heroImg from "@/assets/hero-interior.jpeg";
 import aboutImg from "@/assets/about-studio.jpg";
@@ -43,7 +42,6 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-
       {/* HERO */}
       <section className="relative flex min-h-[100svh] items-center overflow-hidden">
         <img
@@ -55,36 +53,21 @@ function Home() {
         />
         <div className="veil absolute inset-0" />
         <div className="container-lux relative pb-20 pt-36">
-          <motion.p
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="eyebrow text-sm tracking-[0.2em]"
-          >
+          <p className="eyebrow text-sm tracking-[0.2em]">
             {siteConfig.tagline}
-          </motion.p>
+          </p>
 
           <h1 className="mt-6 max-w-4xl text-5xl leading-[1.03] text-ivory md:text-7xl">
             Transforming Spaces Into Timeless Designs
           </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 22 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.22, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-7 max-w-xl text-[1.02rem] leading-relaxed text-ivory/80"
-          >
+          <p className="mt-7 max-w-xl text-[1.02rem] leading-relaxed text-ivory/80">
             We help homes and businesses across Pakistan — with a base in Rawalpindi and Islamabad —
             choose the right flooring, wall panels, wallpaper, blinds and curtains for their space,
             then install it all ourselves, so you're never left managing three different contractors.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 22 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.34, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-10 flex flex-wrap gap-3"
-          >
+          <div className="mt-10 flex flex-wrap gap-3">
             <Button asChild variant="gold" size="lg">
               <Link to="/products">Explore Our Products</Link>
             </Button>
@@ -95,10 +78,9 @@ function Home() {
               <Link to="/calculator">Estimate Your Area</Link>
             </Button>
             <WhatsAppButton message={waMessages.general} size="lg" label="WhatsApp Us" />
-          </motion.div>
+          </div>
         </div>
       </section>
-
 
       {/* PRODUCT CATEGORIES */}
       <section className="py-24 md:py-32">
@@ -158,7 +140,7 @@ function Home() {
             })}
           </div>
         </div>
-      </section>  
+      </section>
 
       {/* FEATURED PRODUCTS */}
       <section className="border-y border-border bg-secondary/50 py-24 md:py-32">
