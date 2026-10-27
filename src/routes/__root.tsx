@@ -126,7 +126,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "5.0",
-            reviewCount: "43",
+            reviewCount: "56",
           },
           sameAs: siteConfig.socials.map((s) => s.href),
         }),

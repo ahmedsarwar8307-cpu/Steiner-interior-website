@@ -89,7 +89,7 @@ function Home() {
             <SectionHeading
               eyebrow="Products"
               title="Browse the showroom by category"
-              description="Twelve curated categories, each with the sub-ranges we stock and install."
+              description="Thirteen curated categories, each with the sub-ranges we stock and install."
             />
             <Reveal>
               <Button asChild variant="goldOutline">
@@ -183,7 +183,7 @@ function Home() {
                 Steiner Design Interior is a Rawalpindi-based interior products studio serving homeowners, architects, and businesses across Rawalpindi, Islamabad, and the wider Pakistan market. We specify and install flooring, wall panels, wallpaper, window blinds, curtains, and bespoke media walls — and we handle it all ourselves, from first measurement through to final installation.
               </p>
               <p>
-                Most of our clients come to us because they don't want to manage three different contractors for one room — a flooring guy, a curtain guy, a panel installer. We measure, supply, and fit everything in-house, which is also why our <span className="text-foreground">5.0-star rating from 44+ Google reviews</span> tends to mention how smooth the process was, not just the finished result.
+                Most of our clients come to us because they don't want to manage three different contractors for one room — a flooring guy, a curtain guy, a panel installer. We measure, supply, and fit everything in-house, which is also why our <span className="text-foreground">5.0-star rating from 56+ Google reviews</span> tends to mention how smooth the process was, not just the finished result.
               </p>
             </Reveal>
             <Reveal delay={0.16} className="mt-10">
