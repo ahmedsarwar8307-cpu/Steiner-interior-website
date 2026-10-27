@@ -19,11 +19,13 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
         className="relative block overflow-hidden rounded-sm"
       >
         <img
-          src={project.cover}
-          alt={project.title}
-          loading="lazy"
-          className="w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
-        />
+  src={project.cover}
+  alt={project.title}
+  loading="lazy"
+  width={1200}
+  height={900}
+  className="w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.05]"
+/>
         <div className="card-veil absolute inset-0 opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
         <div className="absolute inset-x-0 bottom-0 p-6">
           <p className="text-[0.78rem] uppercase tracking-[0.14em] text-gold">{project.type}</p>
