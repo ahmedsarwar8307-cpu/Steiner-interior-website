@@ -9,22 +9,23 @@ export type ProjectVideo = {
 export const projectVideos: ProjectVideo[] = [
   {
     id: "video-1",
-    title: "Residential Entrance & Flooring Detail",
+    title: "Complete Room Interior in Commercial Market, Rawalpindi",
     description:
-      "A walkthrough of a completed residence showing entrance detailing, ambient lighting and finished flooring.",
+      "A complete room interior designed and finished in Commercial Market, Rawalpindi, featuring a custom media wall, German wooden flooring, decorative wall panelling, a 3D ceiling and bespoke high-end furniture.",
     src: "/videos/project-video-1.mp4.mp4",
   },
   {
     id: "video-2",
-    title: "Interior Finishing Walkthrough",
+    title: "Modern Wall Design with WPC and PU Stone Panels",
     description:
-      "On-site walkthrough of interior finishes — wall treatment, flooring and joinery brought together.",
+      "A contemporary feature wall combining WPC wall panels with PU stone wall panels to create a distinctive mix of textures and a refined decorative finish.",
     src: "/videos/project-video-2.mp4.mp4",
   },
   {
     id: "video-3",
-    title: "Completed Space Reveal",
-    description: "A short reveal of a completed interior space after handover.",
+    title: "Luxury Office Interior with Custom Furniture and Wall Panels",
+    description:
+      "An office interior featuring WPC wall panels, PU stone wall panels, custom luxury office furniture and built-in office almirahs, bringing together practical storage and a polished professional finish.",
     src: "/videos/project-video-3.mp4.mp4",
   },
 ];
