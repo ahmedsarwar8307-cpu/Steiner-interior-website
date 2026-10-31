@@ -26,6 +26,13 @@ import CT from "@/assets/cp-project.jpeg";
 import CO from "@/assets/CO-project.jpeg";
 import villa from "@/assets/living-after.jpeg";
 import villa2 from "@/assets/villa-project.jpeg";
+import mediaw from "@/assets/m-w.jpeg"
+import Kd from "@/assets/Kd.jpeg"
+const boutiqueGallery = Object.values(
+  import.meta.glob("@/assets/boutique-showroom/*.{jpg,jpeg,png}", { eager: true, import: "default" })
+) as string[];
+
+
 export type Project = {
   slug: string;
   title: string;
@@ -76,7 +83,7 @@ export const projects: Project[] = [
     year: "Completed 2025",
     description:
       "Explore an office fit-out in Gulberg Green, Islamabad, featuring carpet tiles, timber wall cladding and roller blinds designed for a coordinated, professional workspace.",
-    cover: corporateofficeImg,
+    cover: CO,
     gallery: [CO, CT,corporateofficeImg],
     materials: ["Carpet Tiles", "Wooden Flooring", "Sports Flooring"],
   },
@@ -102,8 +109,8 @@ export const projects: Project[] = [
     year: "Completed 2026",
     description:
       "Explore a kitchen and dining renovation in DHA II, Islamabad, featuring SPC flooring, wall mouldings and coordinated finishes for a practical, contemporary interior.",
-    cover: kitchenDiningImg,
-    gallery: [kitchenDiningImg,KDrenovationImg,],
+    cover: KDrenovationImg,
+    gallery: [kitchenDiningImg,KDrenovationImg,Kd],
     materials: ["SPC Flooring", "Wall Mouldings"],
   },
   {
@@ -116,7 +123,7 @@ export const projects: Project[] = [
     description:
       "View a custom media wall in Airport Housing Society, Islamabad, featuring fluted timber, concealed cove lighting and integrated cable management for a cinematic lounge.",
     cover: mediawallloungeImg,
-    gallery: [mediawallloungeImg, loungechairImg, panelsImg],
+    gallery: [mediawallloungeImg, loungechairImg, mediaw],
     materials: ["Media Walls", "WPC Panels", "Lounge Chairs"],
   },
   {
@@ -129,7 +136,7 @@ export const projects: Project[] = [
     description:
       "Explore a boutique showroom in Gulberg Green, Islamabad, combining Turkish wooden flooring, PU stone wall panels and accent lighting to highlight product displays.",
     cover: boutiqueShowroomImg,
-    gallery: [boutiqueShowroomImg, puStoneImg, turkishwoodenflooringImg],
+    gallery: boutiqueGallery,
     materials: ["Turkish Wooden Flooring", "PU Stone Panels"],
   },
 ];
