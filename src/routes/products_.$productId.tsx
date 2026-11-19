@@ -1,3 +1,4 @@
+
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Check } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
@@ -28,6 +29,12 @@ export const Route = createFileRoute("/products_/$productId")({
     }
     const { product } = loaderData;
     return {
+      links: [
+        {
+          rel: "canonical",
+          href: `https://www.steinerinterior.com/products/${product.id}`,
+        },
+      ],
       meta: [
         { title: `${product.name} | ${siteConfig.name}` },
         { name: "description", content: product.description },
@@ -43,7 +50,7 @@ function ProductDetail() {
   const { product } = Route.useLoaderData();
   const sub = subcategoryName(product.category, product.subcategory);
   const related = products.filter((p) => p.category === product.category && p.id !== product.id).slice(0, 3);
-    const calcTab = categoryToCalculatorTab(product.category);
+  const calcTab = categoryToCalculatorTab(product.category);
 
   return (
     <>
@@ -59,9 +66,9 @@ function ProductDetail() {
           </Link>
 
           <div className="mt-10 grid gap-12 lg:grid-cols-2 lg:gap-16">
-           <Reveal>
-  <ProductImageCarousel images={product.images} fallback={product.image} alt={product.name} />
-</Reveal>
+            <Reveal>
+              <ProductImageCarousel images={product.images} fallback={product.image} alt={product.name} />
+            </Reveal>
 
             <Reveal delay={0.08}>
               <p className="eyebrow">{categoryName(product.category)}</p>
@@ -91,8 +98,7 @@ function ProductDetail() {
                 {product.variations.map((v) => (
                   <span
                     key={v}
-                   // className="rounded-full border border-border bg-card px-4 py-2 text-[0.7rem] uppercase tracking-[0.14em] text-muted-foreground"
-                   className="rounded-full border border-border bg-secondary px-4 py-2 text-[0.7rem] uppercase tracking-[0.14em] text-muted-foreground"
+                    className="rounded-full border border-border bg-secondary px-4 py-2 text-[0.7rem] uppercase tracking-[0.14em] text-muted-foreground"
                   >
                     {v}
                   </span>
@@ -110,9 +116,11 @@ function ProductDetail() {
                 </Button>
               </div>
             </Reveal>
-                   </div>
-{product.pdfs?.length ? <ProductPdfs pdfs={product.pdfs} /> : null}
-{product.seriesGroup ? <CarpetSeriesGrid /> : null} 
+          </div>
+
+          {product.pdfs?.length ? <ProductPdfs pdfs={product.pdfs} /> : null}
+          {product.seriesGroup ? <CarpetSeriesGrid /> : null}
+
           {calcTab ? (
             <div className="mt-24 border-t border-border pt-16">
               <h2 className="text-3xl">How Much Do You Need?</h2>
@@ -140,4 +148,3 @@ function ProductDetail() {
     </>
   );
 }
-
