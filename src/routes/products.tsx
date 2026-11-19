@@ -1,3 +1,4 @@
+
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useState } from "react";
@@ -19,6 +20,12 @@ export const Route = createFileRoute("/products")({
     q: typeof search["q"] === "string" ? search["q"] : "",
   }),
   head: () => ({
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.steinerinterior.com/products",
+      },
+    ],
     meta: [
       { title: `Products — Flooring, Panels, Blinds & More | ${siteConfig.name}` },
       {
@@ -74,18 +81,20 @@ function ProductsPage() {
             onSubcategory={(slug) => navigate({ search: { category, sub: slug, q: query } })}
           />
 
-                   <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-y border-border py-4">
+          <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-y border-border py-4">
             <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
               {filtered.length} {filtered.length === 1 ? "product" : "products"}
               {activeCategory ? ` in ${activeCategory.name}` : ""}
             </p>
+
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 to="/calculator"
                 className="text-xs uppercase tracking-[0.16em] text-gold underline-offset-4 hover:underline"
               >
-                 Try our area calculator
+                Try our area calculator
               </Link>
+
               <WhatsAppButton
                 size="sm"
                 label={activeCategory ? `Enquire about ${activeCategory.name}` : "Enquire on WhatsApp"}
@@ -109,8 +118,6 @@ function ProductsPage() {
               No products match this filter. Try another category or search term.
             </p>
           ) : null}
-
-        
         </div>
       </section>
     </>
